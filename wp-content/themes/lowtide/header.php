@@ -6,10 +6,12 @@
   
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link 
-        rel="stylesheet" 
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
-        crossorigin="anonymous">
+  
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.css' rel='stylesheet' />
+
+  <link href="https://fonts.googleapis.com/css?family=Arimo:700|Oxygen" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   
   <?php wp_head(); ?>
   
@@ -47,7 +49,7 @@
       </a>
 
       <div class="logo">
-        <a href="/" tabindex="0" class="logo-link"><img src="/img/logo.png" alt="Smart Sea Level Sensors Logo"></a>
+        <a href="/" tabindex="0" class="logo-link"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Smart Sea Level Sensors Logo"></a>
       </div>
 
       <nav class="nav" id="navbar" aria-label="Primary menu" role="navigation">
