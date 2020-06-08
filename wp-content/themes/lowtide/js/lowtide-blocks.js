@@ -2,28 +2,23 @@ wp.blocks.registerBlockType('lowtide/contained-width', {
   title: 'GCP Contained Width',
   icon: 'smiley',
   category: 'layout',
-  attributes: {
-    content: {
-      type: 'string',
-      source: 'html',
-      selector: 'p',
-    },
-  },
   
   edit: function( props ) {
-    return wp.element.createElement( wp.editor.RichText, {
+    console.log( props );
+    return wp.element.createElement( wp.blockEditor.RichText, {
       tagName: 'p',
-      className: props.className,
+      className: 'contained',
       value: props.attributes.content,
-      onChange: function( content ) {
-        props.setAttributes( { content: content } );
+      onChange: function( newContent ) {
+        props.setAttributes( { content: newContent } );
+        console.log( props.attributes.content );
       },
     } );
   },
   
-  save: function( props ) {
-    return null;
-  },
+	save: function( props ) {
+		return null;
+	},
   
 } );
 

@@ -36,16 +36,27 @@ function register_dynamic_block() {
 
   // Make sure name matches registerBlockType in ./index.js
 
-  register_block_type('lowtide/contained-width', array(
 
-    'render_callback' => 'render_dynamic_block'
-
-  ));
+    register_block_type(
+        'lowtide/contained-width',
+        array(
+            'attributes' => array(
+                'content' => array(
+                    'type' => 'string',
+                ),
+                'className' => array(
+                    'type' => 'string',
+                ),
+            ),
+            'render_callback' => 'render_dynamic_block',
+        )
+    );
 
 }
 
-function render_dynamic_block($attributes) {  
-  return 'Hello PHP block';
+function render_dynamic_block($attributes) {
+  $html = $attributes['content'];
+  return '<div class="width-contained">Goob' . $html . '</div>';
 }
 
 function lowtide_menu_links( $html ) {
