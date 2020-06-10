@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="content">
-  <div class="section">
+  <div class="section <?php page_slug(); ?>">
     <div class="container">
       <?php
       
@@ -10,14 +10,9 @@
             the_post(); ?>
             
             <h2><?php the_title(); ?></h2>
-      
-            <div class="row justify-content-md-center">
-              <div class="col-md-9">
               
-                <?php the_content(); ?>
+            <?php the_content(); ?>
                 
-              </div>
-            </div>
             <?php
           }
         }

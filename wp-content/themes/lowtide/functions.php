@@ -1,12 +1,30 @@
 <?php
+
+/* Block registration */
 include( get_template_directory() . '/blocks/lowtide-blocks.php' );
 
+/* A useful helper method */
 function scream( $msg ) {
   
   echo( '<script>console.log("' . $msg . '")</script>' );
   
 }
 
+/* Echos wordpress post name into any spot */
+function page_slug() {
+  global $post;
+  $class = '';
+  
+  
+  if (isset ( $post ) ) {
+    $class .= $post->post_name;
+  }
+  
+  echo $class;
+}
+
+
+/* Applies additional custom styling to nav menu <a> elements */
 function lowtide_menu_links( $html ) {
   
    return preg_replace( '/<a /', '<a class="navlink" tabindex="0" ', $html );
@@ -15,6 +33,8 @@ function lowtide_menu_links( $html ) {
 
 add_filter( 'wp_nav_menu','lowtide_menu_links' );
 
+
+/* Basic theme registration */
 function lowtide_theme_support() {
   
   add_theme_support( 'post-thumbnails' );
@@ -28,6 +48,8 @@ function lowtide_theme_support() {
 
 add_action( 'after_setup_theme', 'lowtide_theme_support' );
 
+
+/* basic style loading */
 function lowtide_register_styles() {
   
   $style_dir = get_template_directory_uri() . '/css';
@@ -38,6 +60,15 @@ function lowtide_register_styles() {
 
 add_action( 'wp_enqueue_scripts', 'lowtide_register_styles' );
 
+//add_filter( 'script_loader_tag', 'add_type_attribute', 10, 3 );
+//
+//function add_type_attribute($tag, $handle, $src) {
+//    if ( 'gutenberg-aria' !== $handle ) {
+//        return $tag;
+//    }
+//    $tag = '<script type="module" src="' . esc_url( $src ) . '"></script>';
+//    return $tag;
+//}
 function lowtide_register_scripts() {
   
   $script_dir = get_template_directory_uri() . '/js';
@@ -47,9 +78,14 @@ function lowtide_register_scripts() {
   $strudel_dep = array( 'lowtide-strudel' );
   wp_enqueue_script( 'lowtide-nav', $script_dir . '/nav.js', $strudel_dep );
   
+//  wp_enqueue_script( 'gutenberg-aria', 
+//                     $script_dir . '/gutenberg-aria.js',
+//                     array( 'wp-element', 'wp-editor',  'wp-rich-text' )
+//                   );
+  
 }
 
-add_action( 'wp_enqueue_scripts', 'lowtide_register_scripts' );
+add_action( 'enqueue_block_editor_assets', 'lowtide_register_scripts' );
 
 function lowtide_menus() {
   

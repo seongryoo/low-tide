@@ -1,25 +1,45 @@
-wp.blocks.registerBlockType('lowtide/contained-width', {
-  title: 'GCP Contained Width',
-  icon: 'smiley',
-  category: 'layout',
-  
-  edit: function( props ) {
-    console.log( props );
-    return wp.element.createElement( wp.blockEditor.RichText, {
-      tagName: 'p',
-      className: 'contained',
-      value: props.attributes.content,
-      onChange: function( newContent ) {
-        props.setAttributes( { content: newContent } );
-        console.log( props.attributes.content );
-      },
-    } );
-  },
-  
-	save: function( props ) {
-		return null;
-	},
-  
-} );
+var el = wp.element.createElement;
+var InnerBlocks = wp.blockEditor.InnerBlocks;
 
-console.log('enqueed');
+var args = {
+  title: 'Width Container',
+  category: 'layout',
+
+  edit: function( props ) {
+    return el(
+      'div',
+      { className: props.className },
+      el( InnerBlocks, {
+
+
+      renderAppender: () => el( InnerBlocks.ButtonBlockAppender )
+      } )
+    );
+  },
+
+  save: function( props ) {
+
+    var colData = {
+      className: 'col-md-9',
+    }
+
+    var rowData = {
+      className: props.className + ' row justify-content-md-center'
+    }
+
+    return el(
+      'div',
+      rowData,
+      el(
+        'div',
+        colData,
+        el( InnerBlocks.Content )
+      )
+    );
+
+  },
+
+}; /*end of args obj*/
+
+wp.blocks.registerBlockType( 'lowtide/width-container', args );
+  

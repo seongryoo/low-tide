@@ -1,8 +1,8 @@
 <?php
 
-/*
-Template Name: Large Width One Column
-*/
+///*
+//Template Name: Large Width One Column
+//*/
 
 ?>
 
@@ -19,13 +19,9 @@ Template Name: Large Width One Column
             
             <h2><?php the_title(); ?></h2>
       
-            <div class="row justify-content-md-center">
-              <div class="col-md-12">
               
                 <?php the_content(); ?>
                 
-              </div>
-            </div>
             <?php
           }
         }

@@ -1,0 +1,5 @@
+[data-type="lowtide/width-container"].wp-block.block-editor-block-list__block.has-selected-ui::before {
+  background: aliceblue;
+  padding: 0 2em;
+  outline: 1px dashed #8d96a0;
+}
