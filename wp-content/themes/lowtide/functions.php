@@ -23,6 +23,10 @@ function page_slug() {
   echo $class;
 }
 
+/* Renames default template for clarity */
+add_filter('default_page_template_title', function() {
+    return 'Single Column Page';
+});
 
 /* Applies additional custom styling to nav menu <a> elements */
 function lowtide_menu_links( $html ) {
@@ -60,15 +64,7 @@ function lowtide_register_styles() {
 
 add_action( 'wp_enqueue_scripts', 'lowtide_register_styles' );
 
-//add_filter( 'script_loader_tag', 'add_type_attribute', 10, 3 );
-//
-//function add_type_attribute($tag, $handle, $src) {
-//    if ( 'gutenberg-aria' !== $handle ) {
-//        return $tag;
-//    }
-//    $tag = '<script type="module" src="' . esc_url( $src ) . '"></script>';
-//    return $tag;
-//}
+
 function lowtide_register_scripts() {
   
   $script_dir = get_template_directory_uri() . '/js';
@@ -77,12 +73,9 @@ function lowtide_register_scripts() {
   
   $strudel_dep = array( 'lowtide-strudel' );
   wp_enqueue_script( 'lowtide-nav', $script_dir . '/nav.js', $strudel_dep );
-  
-//  wp_enqueue_script( 'gutenberg-aria', 
-//                     $script_dir . '/gutenberg-aria.js',
-//                     array( 'wp-element', 'wp-editor',  'wp-rich-text' )
-//                   );
-  
+  add_filter('default_page_template_title', function() {
+    return __('My default template name', 'your_text_domain');
+});
 }
 
 add_action( 'enqueue_block_editor_assets', 'lowtide_register_scripts' );

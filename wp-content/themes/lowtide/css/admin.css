@@ -1,9 +1,22 @@
+[data-type="lowtide/width-container"].wp-block.block-editor-block-list__block.has-selected-ui {
+  padding: 0 2em;
+}
+
 [data-type="lowtide/width-container"].wp-block.block-editor-block-list__block.has-selected-ui::before {
   background: aliceblue;
-  padding: 0 2em;
   outline: 1px dashed #8d96a0;
 }
 
 .wp-admin .wp-block {
   max-width: 1280px;
+}
+
+[data-type="lowtide/basic-group"].wp-block.block-editor-block-list__block.has-selected-ui {
+  padding: 1em;
+}
+
+[data-type="lowtide/basic-group"].wp-block.block-editor-block-list__block.has-selected-ui::before {
+  background: none;
+  padding: 1em;
+  outline: 1px dotted gray;
 }

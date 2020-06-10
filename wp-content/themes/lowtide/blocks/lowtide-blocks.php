@@ -1,5 +1,7 @@
 <?php
 
+/* Creating block category for GCP  ----------------------- */
+
 function lowtide_block_category( $categories, $post ) {
   return array_merge(
     $categories,
@@ -14,6 +16,9 @@ function lowtide_block_category( $categories, $post ) {
 }
 add_filter( 'block_categories', 'lowtide_block_category', 10, 2 );
 
+
+/* Loading GCP block assets (js file and administrative css) ----------------------- */
+
 function lowtide_load_blocks() {
   wp_enqueue_script(
     'lowtide-blocks',
@@ -26,6 +31,8 @@ function lowtide_load_blocks() {
 
 add_action( 'enqueue_block_editor_assets', 'lowtide_load_blocks' );
 
+
+/* Block registration functions ----------------------- */
 
 function lowtide_register_contained_width_block() {
   if ( ! function_exists( 'register_block_type' ) ) {
@@ -72,6 +79,32 @@ function lowtide_register_card_block() {
 
 add_action( 'init', 'lowtide_register_card_block' );
 
+function lowtide_register_group_block() {
+  if ( ! function_exists( 'register_block_type' ) ) {
+    return;
+  }
+  
+  $register_args = array(
+    'attributes' => array(
+      'content' => array(
+        'type' => 'string',
+      ),
+      'className' => array(
+        'type' => 'string',
+      ),
+    ),
+    'render_callback' => 'lowtide_group_block_render',
+  );
+
+  register_block_type( 'lowtide/basic-group', $register_args );
+
+}
+
+add_action( 'init', 'lowtide_register_group_block' );
+
+
+/* Render functions ----------------------- */
+
 function lowtide_width_container_render( $attributes, $content ) {
   $markup = '';
   $markup .= '<div class="row justify-content-md-center">';
@@ -88,6 +121,17 @@ function lowtide_card_block_render( $attributes, $content ) {
   $markup = '';
   $markup .= '<div class="card">';
     $markup .= '<div class="card-body">';
+      $markup .= $content;
+    $markup .= '</div>';
+  $markup .= '</div>';
+  
+  return $markup;
+}
+
+function lowtide_group_block_render( $attributes, $content ) {
+  $markup = '';
+  $markup .= '<div class="section ' . $attributes['className'] . '">';
+    $markup .= '<div class="container">';
       $markup .= $content;
     $markup .= '</div>';
   $markup .= '</div>';
