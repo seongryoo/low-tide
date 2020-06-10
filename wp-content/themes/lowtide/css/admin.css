@@ -3,3 +3,7 @@
   padding: 0 2em;
   outline: 1px dashed #8d96a0;
 }
+
+.wp-admin .wp-block {
+  max-width: 1280px;
+}

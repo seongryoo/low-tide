@@ -1,9 +1,10 @@
 var el = wp.element.createElement;
 var InnerBlocks = wp.blockEditor.InnerBlocks;
 
-var args = {
-  title: 'Width Container',
-  category: 'layout',
+var containerArgs = {
+  title: '(GCP) Width Container',
+  category: 'lowtide-blocks',
+  icon: 'admin-site-alt',
 
   edit: function( props ) {
     return el(
@@ -19,27 +20,37 @@ var args = {
 
   save: function( props ) {
 
-    var colData = {
-      className: 'col-md-9',
-    }
+    return el( InnerBlocks.Content );
 
-    var rowData = {
-      className: props.className + ' row justify-content-md-center'
-    }
+  }, /* end of save() */
 
+}; /*end of containerArgs obj*/
+
+wp.blocks.registerBlockType( 'lowtide/width-container', containerArgs );
+
+var cardArgs = {
+  title: '(GCP) Bevel Card',
+  category: 'lowtide-blocks',
+  icon: 'admin-site-alt',
+  
+  edit: function( props ) {
     return el(
       'div',
-      rowData,
-      el(
-        'div',
-        colData,
-        el( InnerBlocks.Content )
-      )
-    );
+      { className: props.className + ' card' },
+      el( InnerBlocks, {
 
+
+      renderAppender: () => el( InnerBlocks.ButtonBlockAppender )
+      } )
+    );
   },
 
-}; /*end of args obj*/
+  save: function( props ) {
 
-wp.blocks.registerBlockType( 'lowtide/width-container', args );
+    return el( InnerBlocks.Content );
+
+  }, /* end of save() */
+
+}; /* end of cardArgs */
   
+wp.blocks.registerBlockType( 'lowtide/card', cardArgs );
