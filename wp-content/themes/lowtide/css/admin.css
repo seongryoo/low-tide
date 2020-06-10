@@ -3,8 +3,11 @@
 }
 
 [data-type="lowtide/width-container"].wp-block.block-editor-block-list__block.has-selected-ui::before {
-  background: aliceblue;
-  outline: 1px dashed #8d96a0;
+  background: none;
+  border-left: 3px dashed #003057;
+  border-right: 3px dashed #003057;
+  border-top: 1px solid #88b6dc80;
+  border-bottom: 1px solid #88b6dc80;
 }
 
 .wp-admin .wp-block {
@@ -17,6 +20,10 @@
 
 [data-type="lowtide/basic-group"].wp-block.block-editor-block-list__block.has-selected-ui::before {
   background: none;
-  padding: 1em;
-  outline: 1px dotted gray;
+  padding: 0 1em;
+  margin: 1em 0;
+  border-left: 3px dashed #B3A369;
+  border-right: 3px dashed #B3A369;
+  border-top: 1px solid #D5CBA680;
+  border-bottom: 1px solid #D5CBA680;
 }
