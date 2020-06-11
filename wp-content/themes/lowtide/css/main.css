@@ -929,6 +929,9 @@ img.bio-img {
   align-items: center;
   
   font-size: 16px;
+}
+
+.bio-block.blog {
   margin-bottom: 2em;
 }
 
@@ -995,4 +998,69 @@ body.single .bio-block {
   font-style: italic;
   font-family: 'Arimo', sans-serif;
   padding: 0 2em;
+}
+
+/* Comments */
+
+.comment {
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+body.single .comment .bio-block {
+  margin-bottom: 1.5em;
+}
+
+.comments-wrapper h2.comment-title {
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.comments-wrapper {
+  margin-top: 48px;
+}
+
+.comment-respond {
+  margin-top: 48px;
+}
+
+.comment-respond textarea {
+  width: 100%;
+  resize: none;
+  height: 10em;
+  padding: 1em;
+  border-radius: 0.5em;
+  outline: 3px solid #c1d3ff;
+  font-family: 'Oxygen', sans-serif;
+  
+  border: none;
+  -webkit-box-shadow: 0 16px 48px rgba(32, 41, 50, 0.12);
+  box-shadow: 0 16px 48px rgba(32, 41, 50, 0.12);
+  
+  -webkit-transition: outline .1s;
+  transition: outline .1s;
+}
+
+.comment-respond textarea:focus {
+  outline: 5px solid #175088;
+}
+
+.comment-respond input[type="submit"] {
+  width: 100%;
+  background: #002D59;
+  border-radius: 4px;
+  border: none;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 40, 91, 0.24);
+  box-shadow: 0 8px 16px rgba(0, 40, 91, 0.24);
+  display: inline-block;
+  color: #fff;
+  font-family: "Arimo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.1px;
+  line-height: 16px;
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
 }

@@ -30,7 +30,7 @@
                 $markup = '<div class="blog-post-block card">';
                 
                 /* Post author */
-                  $markup .= '<div class="bio-block">';
+                  $markup .= '<div class="bio-block blog">';
                 
                     $markup .= '<img class="blog-post-author-image" src="' . $src . '" alt="' . get_the_author() . '">';
                   
