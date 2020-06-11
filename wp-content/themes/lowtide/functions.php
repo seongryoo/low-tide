@@ -13,7 +13,7 @@ function scream( $msg ) {
 /* Echos wordpress post name into any spot */
 function page_slug() {
   global $post;
-  $class = '';
+  $class = 'gurp';
   
   
   if (isset ( $post ) ) {
@@ -21,6 +21,8 @@ function page_slug() {
   }
   
   echo $class;
+  
+  scream( $class );
 }
 
 /* Renames default template for clarity */
@@ -64,7 +66,7 @@ function lowtide_register_styles() {
 
 add_action( 'wp_enqueue_scripts', 'lowtide_register_styles' );
 
-
+/* Theme js (not blocks) loading */
 function lowtide_register_scripts() {
   
   $script_dir = get_template_directory_uri() . '/js';
@@ -73,13 +75,11 @@ function lowtide_register_scripts() {
   
   $strudel_dep = array( 'lowtide-strudel' );
   wp_enqueue_script( 'lowtide-nav', $script_dir . '/nav.js', $strudel_dep );
-  add_filter('default_page_template_title', function() {
-    return __('My default template name', 'your_text_domain');
-});
 }
 
-add_action( 'enqueue_block_editor_assets', 'lowtide_register_scripts' );
+add_action( 'wp_enqueue_scripts', 'lowtide_register_scripts' );
 
+/* Theme menu location registration */
 function lowtide_menus() {
   
   $locations = array(
@@ -92,6 +92,7 @@ function lowtide_menus() {
 
 add_action( 'init', 'lowtide_menus' );
 
+/* Theme logo variable access */
 function lowtide_get_custom_logo( $html ) {
   
   $logo_id = get_theme_mod( 'custom_logo' );
@@ -108,6 +109,8 @@ function lowtide_get_custom_logo( $html ) {
 
 add_filter( 'get_custom_logo', 'lowtide_get_custom_logo' );
 
+
+/* Creates hook for any actions that need to be performed after the body loads, i.e. js scripts */
 if ( ! function_exists( 'wp_body_open' ) ) {
   
   function wp_body_open() {
@@ -116,6 +119,8 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 
 }
 
+
+/* (Provided by Wordpress) Filter to make Wordpress 'Read More' button more accessible */
 function lowtide_read_more_tag( $html ) {
 
   $search_str = '/<a(.*)>(.*)<\/a>/iU';

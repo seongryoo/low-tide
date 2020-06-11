@@ -910,3 +910,33 @@ img.bio-img {
   text-decoration: underline;
   opacity: 1;
 }
+
+/* Blog styling */
+
+.bio-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.bio-block img.blog-post-author-image {
+  width: 5em;
+  height: 5em;
+  border-radius: 5em;
+  margin-right: 2em;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+

@@ -8,7 +8,11 @@ Template Name: Freestyle Page (no sections)
 
 <?php get_header(); ?>
 
-<main id="content">
+<main id="content" class="<?php 
+  global $post;
+  $post_slug = $post->post_name;
+  echo $post_slug;
+?>">
     <?php
 
       if ( have_posts() ) {
