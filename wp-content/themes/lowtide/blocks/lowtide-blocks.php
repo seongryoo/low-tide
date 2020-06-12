@@ -23,7 +23,7 @@ function lowtide_load_blocks() {
   wp_enqueue_script(
     'lowtide-blocks',
     get_template_directory_uri() . '/js/lowtide-blocks.js',
-    array( 'wp-blocks', 'wp-i18n', 'wp-editor' ),
+    array( 'wp-blocks', 'wp-i18n', 'wp-editor', 'wp-date' ),
     true
   );
   wp_enqueue_style( 'lowtide-admin-style', get_template_directory_uri() . '/css/admin.css' );
@@ -146,6 +146,81 @@ function lowtide_register_image_block() {
 
 add_action( 'init', 'lowtide_register_image_block' );
 
+function lowtide_register_quote_block() {
+  if ( ! function_exists( 'register_block_type' ) ) {
+    return;
+  }
+  
+  $register_args = array(
+    'attributes' => array(
+      'content' => array(
+        'type' => 'string',
+      ),
+      'className' => array(
+        'type' => 'string',
+      ),
+    ),
+    'render_callback' => 'lowtide_quote_block_render',
+  );
+
+  register_block_type( 'lowtide/quote-block', $register_args );
+
+}
+
+add_action( 'init', 'lowtide_register_quote_block' );
+
+
+function lowtide_register_back_link_block() {
+  if ( ! function_exists( 'register_block_type' ) ) {
+    return;
+  }
+  
+  $register_args = array(
+    'attributes' => array(
+      'linkUrl' => array(
+        'type' => 'string',
+      ),
+      'linkText' => array(
+        'type' => 'string',
+      ),
+      'linkAria' => array(
+        'type' => 'string',
+      ),
+      'className' => array(
+        'type' => 'string',
+      ),
+    ),
+    'render_callback' => 'lowtide_back_link_block_render',
+  );
+
+  register_block_type( 'lowtide/back-link-block', $register_args );
+
+}
+
+add_action( 'init', 'lowtide_register_back_link_block' );
+
+
+function lowtide_register_event_block() {
+  if ( ! function_exists( 'register_block_type' ) ) {
+    return;
+  }
+  
+  $register_args = array(
+    'attributes' => array(
+      
+      'date' => array(
+        'type' => 'string',
+      ),
+      
+    ),
+    'render_callback' => 'lowtide_event_block_render',
+  );
+
+  register_block_type( 'lowtide/event-block', $register_args );
+
+}
+
+add_action( 'init', 'lowtide_register_event_block' );
 
 /* Render functions ----------------------- */
 
@@ -179,6 +254,82 @@ function lowtide_group_block_render( $attributes, $content ) {
       $markup .= $content;
     $markup .= '</div>';
   $markup .= '</div>';
+  
+  return $markup;
+}
+
+function lowtide_quote_block_render( $attributes ) {
+  $text = $attributes[ 'content' ];
+  
+  $markup = '';
+  $markup .= '<blockquote class="card bio-quote ' . $attributes[ 'className' ] . '">';
+    $markup .= '<div class="card-body">';
+      $markup .= '<p class="quote-text">';
+        $markup .= $text;
+      $markup .= '</p>';
+    $markup .= '</div>';
+  $markup .= '</blockquote>';
+  
+  return $markup;
+}
+
+function lowtide_back_link_block_render( $attributes ) {
+  $linkText = $attributes[ 'linkText' ];
+  $linkUrl  = $attributes[ 'linkUrl' ];
+  $linkAria = $attributes[ 'linkAria' ];
+  $linkLabelOptional = '';
+  
+  if ( $linkAria != '' ) {
+    $linkLabelOptional = 'aria-label="' . $linkAria . '"';
+  }
+  
+  $markup = '';
+  $markup .= '<nav aria-label="Breadcrumbs" class="breadcrumbs">';
+    $markup .= '<p>';
+      $markup .= '<a href="' . $linkUrl . '" ' . $linkLabelOptional . ' class="back-link">';
+        $markup .= '<span aria-hidden="true">❮ </span>';
+        $markup .= $linkText;
+      $markup .= '</a>';
+    $markup .= '</p>';
+  $markup .= '</nav>';
+  
+  return $markup;
+}
+
+function lowtide_event_block_render( $attributes ) {
+  $date = date_create( $attributes[ 'date' ] );
+  $name = $attributes[ 'name' ];
+  $desc = $attributes[ 'desc' ];
+  $startTime = date_create($attributes[ 'startTime' ]);
+  $endTime = date_create($attributes[ 'endTime' ]);
+  
+  $date_day = date_format( $date, 'D' );
+  $date_num = date_format( $date, 'j' );
+  $date_month = date_format( $date, 'M' );
+  
+  $time_start = date_format( $startTime, 'g:i A' );
+  $time_end = date_format( $endTime, 'g:i A' );
+  $time_zone = date_format( $startTime, 'e' );
+              
+  $markup = '';
+  $markup .= '<div class="row events">';
+  
+  $markup .= '<div class="col-md-2 event-date">';
+    $markup .= '<h5 class="date-box-prefix">' . $date_day . '</h5>';
+    $markup .= '<div class="date-box">';
+      $markup .= '<h5>' . $date_month . '</h5>';
+      $markup .= '<h3>' . $date_num . '</h3>';
+    $markup .= '</div>';
+  $markup .= '</div>';
+  
+  $markup .= '<div class="col-md-9 event-body">';
+    $markup .= '<h4 class="event-title">' . $name . '</h4>';
+    $markup .= '<p class="event-time">' . $time_start . ' - ' . $time_end . ' ' . $time_zone . '</p>';
+    $markup .= '<p class="event-description">' . $desc . '</p>';
+  $markup .= '</div>';
+  
+  $markup .= '</div>';
+  
   
   return $markup;
 }
