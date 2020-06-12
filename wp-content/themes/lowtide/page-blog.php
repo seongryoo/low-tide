@@ -27,6 +27,7 @@
                 $href = get_permalink();
                 $title = get_the_title();
                 $author = get_the_author();
+                $authorURL = get_the_author_meta( 'user_url' );
                 
                 $markup = '<div class="blog-post-block card">';
                 
@@ -36,7 +37,7 @@
                     $markup .= '<img class="blog-post-author-image" src="' . $src . '" alt="' . get_the_author() . '">';
                   
                     $markup .= '<div class="bio-block-info">';
-                      $markup .= '<p class="blog-post-author">' . get_the_author() . '</p>';
+                      $markup .= '<a class="author-link" href="' . $authorURL . '" aria-label="Visit ' . $author . '\'s profile"><p class="blog-post-author">' . get_the_author() . '</p></a>';
                       $markup .= '<p class="blog-post-date">' . get_the_date( 'M n, Y' ) . '</p>';
                     $markup .= '</div>';
                 

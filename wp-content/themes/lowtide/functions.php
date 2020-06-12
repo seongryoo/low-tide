@@ -12,7 +12,7 @@ function scream( $msg ) {
 
 /* Excerpt length */
 function lowtide_excerpt_length( $length ) {
-    return 20;
+    return 30;
 }
 add_filter( 'excerpt_length', 'lowtide_excerpt_length');
 

@@ -34,9 +34,10 @@
       foreach ( $comments as $comment ) :
         $id = get_comment_ID();
         $author = get_comment_author();
-        $src = $src = get_avatar_url( $comment->user_id );
+        $src = get_avatar_url( $comment->user_id );
         $text = get_comment_text();
         $date = get_comment_date( 'U' );
+        $authorURL = get_userdata( $comment->user_id )->user_url;
         $readableDate = human_time_diff( $date, current_time( 'timestamp' ) ) . ' ago';
       
         $markup = '';
@@ -47,7 +48,7 @@
             $markup .= '<img class="blog-post-author-image" src="' . $src . '" alt="' . $author . '">';
 
             $markup .= '<div class="bio-block-info">';
-              $markup .= '<p class="blog-post-author">' . $author . '</p>';
+              $markup .= '<a class="author-link" href="' . $authorURL . '" aria-label="Visit ' . $author . '\'s profile"><p class="blog-post-author">' . $author . '</p></a>';
               $markup .= '<p class="blog-post-date">' . $readableDate . '</p>';
             $markup .= '</div>';
 
