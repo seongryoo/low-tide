@@ -15,6 +15,7 @@
 
             $args = array(
               'post_type' => 'post',
+              'category_name' => 'blog',
             );
             $the_query = new WP_Query( $args );
 

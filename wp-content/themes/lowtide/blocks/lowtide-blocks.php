@@ -102,6 +102,50 @@ function lowtide_register_group_block() {
 
 add_action( 'init', 'lowtide_register_group_block' );
 
+function lowtide_register_image_block() {
+  if ( ! function_exists( 'register_block_type' ) ) {
+    return;
+  }
+  
+  $register_args = array(
+    'attributes' => array(
+      'image' => array(
+        'type' => 'string',
+        'source' => 'attribute',
+        'selector' => 'img',
+        'attribute' => 'src',
+      ),
+      'altText' => array(
+        'type' => 'string',
+        'source' => 'attribute',
+        'selector' => 'a',
+        'attribute' => 'aria-label',
+      ),
+      'title' => array(
+        'type' => 'string',
+      ),
+      'description' => array(
+        'type' => 'string',
+      ),
+      'linkUrl' => array(
+        'type' => 'string',
+        'source' => 'attribute',
+        'selector' => 'a',
+        'attribute' => 'href',
+      ),
+      'className' => array(
+        'type' => 'string',
+      ),
+    ),
+    'render_callback' => 'lowtide_image_block_render',
+  );
+
+  register_block_type( 'lowtide/image-block', $register_args );
+
+}
+
+add_action( 'init', 'lowtide_register_image_block' );
+
 
 /* Render functions ----------------------- */
 
