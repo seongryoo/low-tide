@@ -24,6 +24,9 @@ function lowtide_register_file_upload_block() {
       'aria' => array(
         'type' => 'string',
       ),
+      'className' => array(
+        'type' => 'string',
+      ),
     
     ),
     'render_callback' => 'lowtide_file_upload_render',  

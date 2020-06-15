@@ -27,3 +27,17 @@
   border-top: 1px solid #D5CBA680;
   border-bottom: 1px solid #D5CBA680;
 }
+
+[data-type="lowtide/two-col-related-docs"].wp-block.block-editor-block-list__block.has-selected-ui {
+  padding: 1em;
+}
+
+[data-type="lowtide/two-col-related-docs"].wp-block.block-editor-block-list__block.has-selected-ui::before {
+  background: none;
+  padding: 0 1em;
+  margin: 1em 0;
+  border-left: 3px dashed #69b36c;
+  border-right: 3px dashed #69b36c;
+  border-top: 1px solid #69b36c80;
+  border-bottom: 1px solid #69b36c80;
+}

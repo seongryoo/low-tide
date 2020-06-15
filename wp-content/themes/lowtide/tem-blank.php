@@ -10,25 +10,25 @@ Template Name: Two Column Page
 <div class="post section">
   <div class="container">
     <div class="row <?php 
-  global $post;
-  $post_slug = $post->post_name;
-  echo $post_slug;
-?>">
-    <?php
+      global $post;
+      $post_slug = $post->post_name;
+      echo $post_slug;
+    ?>">
+        <?php
 
-      if ( have_posts() ) {
-        while ( have_posts() ) {
-          the_post(); ?>
+          if ( have_posts() ) {
+            while ( have_posts() ) {
+              the_post(); ?>
 
 
-              <?php the_content(); ?>
+                  <?php the_content(); ?>
 
-          <?php
-        }
-      }
+              <?php
+            }
+          }
 
-    ?>
-</div>
+        ?>
+    </div>
   </div>
 </div>
 

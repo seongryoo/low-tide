@@ -25,3 +25,4 @@ include( plugin_dir_path(__FILE__) . 'blocks/quote.php' );
 include( plugin_dir_path(__FILE__) . 'blocks/two-col-main.php' );
 include( plugin_dir_path(__FILE__) . 'blocks/two-col-related-docs.php' );
 include( plugin_dir_path(__FILE__) . 'blocks/file-upload.php' );
+include( plugin_dir_path(__FILE__) . 'blocks/link.php' );

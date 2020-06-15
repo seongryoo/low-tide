@@ -8,7 +8,7 @@ var MediaUploadCheck = wp.blockEditor.MediaUploadCheck;
 var containerArgs = {
   title: '(GCP) Width Container',
   category: 'lowtide-blocks',
-  icon: 'admin-site-alt',
+  icon: 'editor-contract',
 
   edit: function (props) {
     return el(
@@ -39,7 +39,7 @@ wp.blocks.registerBlockType('lowtide/width-container', containerArgs);
 var cardArgs = {
   title: '(GCP) Bevel Card',
   category: 'lowtide-blocks',
-  icon: 'admin-site-alt',
+  icon: 'format-aside',
 
   edit: function (props) {
     return el(
@@ -70,7 +70,7 @@ wp.blocks.registerBlockType('lowtide/card', cardArgs);
 var groupArgs = {
   title: '(GCP) Section Block',
   category: 'lowtide-blocks',
-  icon: 'admin-site-alt',
+  icon: 'editor-insertmore',
 
   edit: function (props) {
     return el(
@@ -101,7 +101,7 @@ wp.blocks.registerBlockType('lowtide/basic-group', groupArgs);
 var quoteArgs = {
   title: '(GCP) Quote Block',
   category: 'lowtide-blocks',
-  icon: 'admin-site-alt',
+  icon: 'admin-comments',
 
   edit: function (props) {
 
@@ -134,7 +134,7 @@ wp.blocks.registerBlockType('lowtide/quote-block', quoteArgs);
 var backArgs = {
   title: '(GCP) Breadcrumbs back link',
   category: 'lowtide-blocks',
-  icon: 'admin-site-alt',
+  icon: 'undo',
 
   edit: function (props) {
     let domAttrs = {
@@ -193,7 +193,7 @@ wp.blocks.registerBlockType('lowtide/back-link-block', backArgs);
 var eventArgs = {
   title: '(GCP) Events data',
   category: 'lowtide-blocks',
-  icon: 'admin-site-alt',
+  icon: 'calendar-alt',
 
   edit: function (props) {
     var argsText = {
@@ -246,7 +246,7 @@ wp.blocks.registerBlockType('lowtide/event-block', eventArgs);
 var twoColMainArgs = {
   title: '(GCP) Two Column: Main column',
   category: 'lowtide-blocks',
-  icon: 'admin-site-alt',
+  icon: 'text',
 
   edit: function (props) {
     return el(
@@ -276,7 +276,7 @@ wp.blocks.registerBlockType('lowtide/two-col-main', twoColMainArgs);
 var twoColRelatedDocsArgs = {
   title: '(GCP) Two Column: Related documents list',
   category: 'lowtide-blocks',
-  icon: 'admin-site-alt',
+  icon: 'images-alt',
 
   edit: function (props) {
     return el(
@@ -304,13 +304,9 @@ wp.blocks.registerBlockType('lowtide/two-col-related-docs', twoColRelatedDocsArg
 var fileUploadArgs = {
   title: '(GCP) File Link',
   category: 'lowtide-blocks',
-  icon: 'admin-site-alt',
+  icon: 'upload',
 
   edit: function (props) {
-    
-    console.log( props.attributes.mediaId );
-    console.log( props.attributes.mediaName );
-    console.log( props.attributes.mediaUrl );
     
     let renderButton = el(
       MediaUploadCheck,
@@ -403,3 +399,67 @@ var fileUploadArgs = {
   },
 }
 wp.blocks.registerBlockType( 'lowtide/file-upload', fileUploadArgs );
+
+
+var linkArgs = {
+  title: '(GCP) Related documents web link',
+  category: 'lowtide-blocks',
+  icon: 'admin-links',
+  
+  edit: function ( props ) {
+    let urlArgs = {
+      className: 'choose-url',
+      onChange: function( value ) {
+        props.setAttributes( { url: value } );
+      },
+      label: 'Link URL',
+      value: props.attributes.url,
+    }
+    
+    let displayTextArgs = {
+      className: 'choose-display-text',
+      onChange: function( value ) {
+        props.setAttributes( { displayText: value } );
+      },
+      label: 'Display Text',
+      value: props.attributes.displayText,
+    }
+    
+    let ariaTextArgs = {
+      className: 'aria-text',
+      onChange: function( value ) {
+        props.setAttributes( { aria: value } );
+      },
+      label: 'Descriptive label (e.g. "Visit the Georgia Climate Project homepage")',
+      value: props.attributes.aria,
+    }
+    
+    let url = el(
+      wp.components.TextControl,
+      urlArgs
+    );
+    
+    let displayText = el(
+      wp.components.TextControl,
+      displayTextArgs
+    );
+    
+    let ariaText = el(
+      wp.components.TextControl,
+      ariaTextArgs
+    );
+    
+    return el(
+      'div',
+      {
+        className: 'choose-link ' + props.attributes.className,
+      },
+      [ url, displayText, ariaText ]
+    );
+  },
+  
+  save: function( props ) {
+    return null;
+  },
+}
+wp.blocks.registerBlockType( 'lowtide/link', linkArgs );
