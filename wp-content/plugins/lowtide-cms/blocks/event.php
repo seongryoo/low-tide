@@ -11,6 +11,9 @@ function lowtide_register_event_block() {
       'date' => array(
         'type' => 'string',
       ),
+      'startTime' => array(
+        'type' => 'string',
+      ),
       
     ),
     'render_callback' => 'lowtide_event_block_render',
