@@ -16,9 +16,11 @@ function lowtide_block_category( $categories, $post ) {
 }
 add_filter( 'block_categories', 'lowtide_block_category', 10, 2 );
 
-include( plugin_dir_path(__FILE__) . 'blocks/lowtide-blocks-backlink.php' );
-include( plugin_dir_path(__FILE__) . 'blocks/lowtide-blocks-card.php' );
-include( plugin_dir_path(__FILE__) . 'blocks/lowtide-blocks-contained-width.php' );
-include( plugin_dir_path(__FILE__) . 'blocks/lowtide-blocks-event.php' );
-include( plugin_dir_path(__FILE__) . 'blocks/lowtide-blocks-group.php' );
-include( plugin_dir_path(__FILE__) . 'blocks/lowtide-blocks-quote.php' );
+include( plugin_dir_path(__FILE__) . 'blocks/backlink.php' );
+include( plugin_dir_path(__FILE__) . 'blocks/card.php' );
+include( plugin_dir_path(__FILE__) . 'blocks/contained-width.php' );
+include( plugin_dir_path(__FILE__) . 'blocks/event.php' );
+include( plugin_dir_path(__FILE__) . 'blocks/group.php' );
+include( plugin_dir_path(__FILE__) . 'blocks/quote.php' );
+include( plugin_dir_path(__FILE__) . 'blocks/two-col-main.php' );
+include( plugin_dir_path(__FILE__) . 'blocks/two-col-related-docs.php' );

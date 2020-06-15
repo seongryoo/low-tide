@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Freestyle Page (no sections)
+Template Name: No sections, one main column
 */
 
 ?>

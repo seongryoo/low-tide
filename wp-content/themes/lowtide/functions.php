@@ -1,7 +1,5 @@
 <?php
 
-/* Block registration */
-include( get_template_directory() . '/blocks/lowtide-blocks.php' );
 
 /* A useful helper method */
 function scream( $msg ) {
