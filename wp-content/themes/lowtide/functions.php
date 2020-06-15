@@ -31,7 +31,7 @@ function page_slug() {
 
 /* Renames default template for clarity */
 add_filter('default_page_template_title', function() {
-    return 'Single Column Page';
+    return 'Single Column, Contained Width';
 });
 
 /* Applies additional custom styling to nav menu <a> elements */

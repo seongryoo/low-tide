@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Bio page
+Template Name: Single Column, Custom Title
 */
 
 ?>

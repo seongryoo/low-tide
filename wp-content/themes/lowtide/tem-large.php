@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: No sections, one main column
+Template Name: Single Column, Variable Width Sections
 */
 
 ?>
