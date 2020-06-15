@@ -305,24 +305,6 @@ var fileUploadArgs = {
   title: '(GCP) File Link',
   category: 'lowtide-blocks',
   icon: 'admin-site-alt',
-  
-  attributes: {
-    mediaId: {
-      type: 'number',
-    },
-    mediaUrl: {
-      type: 'string',
-    },
-    mediaName: {
-      type: 'string',
-    },
-    displayText: {
-      type: 'string',
-    },
-    aria: {
-      type: 'string',
-    },
-  },
 
   edit: function (props) {
     
