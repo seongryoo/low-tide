@@ -54,7 +54,7 @@ function lowtide_file_upload_render( $attributes ) {
   }
   
   $markup = '';
-  $markup .= '<li>';
+  $markup .= '<li class="no-list">';
     $markup .= '<a href="' . esc_url( $url ) . '" ' . $ariaOptional . '>' . $text . '</a>';
   $markup .= '</li>';
   

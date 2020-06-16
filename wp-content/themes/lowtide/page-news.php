@@ -8,6 +8,30 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card">
+          <a href="http://savannahceo.com/news/2020/04/water-monitoring-project-makes-savannah-world-leader/" target="_blank">
+            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/featured/smart-sea-sensors-expo-highlights-accomplishments-and-shares-future-plans.jpg" alt="Russ Clark, Matt Gerig, Tom McDonald, and David Anderson install sensors">
+            <div class="card-body">
+              <img class="source" src="<?php echo get_template_directory_uri(); ?>/img/featured/savannah-ceo-logo.png" alt="Savannah CEO logo">
+              <h4 class="card-title">Water Monitoring Project Makes Savannah a World Leader</h4>
+              <p class="sub"><span class="date">Apr 29, 2020</span></p>
+            </div>
+          </a>
+        </div> 
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="https://www.yaleclimateconnections.org/2020/04/a-leading-scientists-transition-from-climate-science-to-solutions/" target="_blank">
+            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/featured/kim-cobb-ted-x-talk.jpg" alt="Georgia Tech scientist Kim Cobb emphasizes a point at a December 2019 TedX talk.">
+            <div class="card-body">
+              <img class="source" src="<?php echo get_template_directory_uri(); ?>/img/featured/ycc-logo.jpg" alt="Yale Climate Connections logo">
+              <h4 class="card-title">A leading scientist's transition from climate science to solutions</h4>
+              <p class="sub"><span class="date">Apr 29, 2020</span></p>
+            </div>
+          </a>
+        </div> 
+      </div>
+      <div class="col-md-4">
+        <div class="card">
           <a href="https://www.savannahnow.com/news/20200307/sea-level-rise-challenges-storm-water-system" target="_blank">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/featured/sea-level-rise-challenges-storm-water-system.jpg" alt="Jason Evans of Stetson University (not affiliated with the Smart Sea Level Sensors project) discusses the results of his sea level rise modeling at the Chatham County Commission Friday, March 6.">
             <div class="card-body">
@@ -59,7 +83,7 @@
           <a href="http://savannahceo.com/features/2019/05/smart-sea-sensors-expo-highlights-accomplishments-and-shares-future-plans" target="_blank">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/featured/smart-sea-sensors-expo-highlights-accomplishments-and-shares-future-plans.png" alt="Smart Sea Level Sensors Expo banner">
             <div class="card-body">
-              <img class="source" src="<?php echo get_template_directory_uri(); ?>/img/featured/savannahceo-logo.png" alt="Savannah CEO logo">
+              <img class="source" src="<?php echo get_template_directory_uri(); ?>/img/featured/savannah-ceo-logo.png" alt="Savannah CEO logo">
               <h4 class="card-title">Smart Sea Sensors Expo Highlights Accomplishments and Shares Future Plans</h4>
               <p class="sub"><span class="date">May 17, 2019</span></p>
             </div>

@@ -11,7 +11,13 @@ function lowtide_register_event_block() {
       'date' => array(
         'type' => 'string',
       ),
-      'startTime' => array(
+      'eventInfo' => array(
+        'type' => 'string',
+      ),
+      'name' => array(
+        'type' => 'string',
+      ),
+      'desc' => array(
         'type' => 'string',
       ),
       
@@ -27,20 +33,15 @@ add_action( 'init', 'lowtide_register_event_block' );
 
 /* Render functions ----------------------- */
 
-function lowtide_event_block_render( $attributes ) {
+function lowtide_event_block_render( $attributes, $content ) {
   $date = date_create( $attributes[ 'date' ] );
   $name = $attributes[ 'name' ];
   $desc = $attributes[ 'desc' ];
-  $startTime = date_create($attributes[ 'startTime' ]);
-  $endTime = date_create($attributes[ 'endTime' ]);
+  $eventInfo = $attributes[ 'eventInfo' ];
   
   $date_day = date_format( $date, 'D' );
   $date_num = date_format( $date, 'j' );
   $date_month = date_format( $date, 'M' );
-  
-  $time_start = date_format( $startTime, 'g:i A' );
-  $time_end = date_format( $endTime, 'g:i A' );
-  $time_zone = date_format( $startTime, 'e' );
               
   $markup = '';
   $markup .= '<div class="row events">';
@@ -55,8 +56,8 @@ function lowtide_event_block_render( $attributes ) {
   
   $markup .= '<div class="col-md-9 event-body">';
     $markup .= '<h4 class="event-title">' . $name . '</h4>';
-    $markup .= '<p class="event-time">' . $time_start . ' - ' . $time_end . ' ' . $time_zone . '</p>';
-    $markup .= '<p class="event-description">' . $desc . '</p>';
+    $markup .= '<p class="event-time">' . $eventInfo . '</p>';
+    $markup .=  $desc;
   $markup .= '</div>';
   
   $markup .= '</div>';
