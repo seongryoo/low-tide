@@ -14,7 +14,8 @@ body {
 }
 
 p a, 
-main li a {
+main li a, 
+main figcaption a {
   color: #175088;
   background-color: transparent;
   border-bottom: 3px solid #c1d3ff;
@@ -26,7 +27,9 @@ main li a {
 p a:hover,
 p a:focus,
 main li a:hover,
-main li a:hover {
+main li a:focus,
+main figcaption a:hover,
+main figcaption a:focus {
   background: #5095d954;
   color: black;
   border-bottom: 5px solid #175088;
@@ -426,7 +429,7 @@ main li a:hover {
   margin: 0;
 }
 
-.section p, .section li {
+.section p, main li {
   color: #333E4A;
   font-family: 'Oxygen', sans-serif;
   font-size: 18px;
@@ -434,7 +437,7 @@ main li a:hover {
   line-height: 1.75;
 }
 
-.section li.no-list {
+main li.no-list {
   list-style: none;
 }
 
@@ -729,12 +732,13 @@ main li a:hover {
   margin-bottom: 20px;
 }
 
-.post figcaption {
+.post .wp-block-image figcaption {
   color: #456485;
   font-family: 'Oxygen', sans-serif;
   font-size: 16px;
   line-height: 25px;
   margin-top: 20px;
+  text-align: left;
 }
 
 .post .documents ul {
