@@ -28,7 +28,7 @@ add_action( 'init', 'lowtide_register_two_col_related_docs_block' );
 
 function lowtide_two_col_related_docs_render( $attributes, $content ) {
   $markup = '';
-  $markup .= '<aside class="col-md-4 documents' . $attributes['className'] . '" aria-label="Related documents">';
+  $markup .= '<aside class="col-md-4 documents" aria-label="Related documents">';
     $markup .= '<h2>Documents</h2>';
     $markup .= '<ul>';
       $markup .= $content;

@@ -31,6 +31,8 @@
                 $authorURL = esc_url( get_the_author_meta( 'url' ) );
 
               /* Post title */
+                
+              $markup = '';
 
               $markup .= '<h2 class="blog-post-title" aria-hidden="true">' . $title . '</h2>';
           

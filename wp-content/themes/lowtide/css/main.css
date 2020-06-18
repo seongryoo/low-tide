@@ -75,6 +75,7 @@ main figcaption a:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .header .logo {
@@ -227,13 +228,13 @@ main figcaption a:focus {
   }
 
   .header.open .hamburger svg path.bar-1 {
-    -webkit-transform: translate(25%, 0%) rotate(45deg) scaleX(125%);
-    transform: translate(25%, 0%) rotate(45deg) scaleX(125%);
+    -webkit-transform: translate(25%, 0%) rotate(45deg) scale(1.25, 1);
+    transform: translate(25%, 0%) rotate(45deg) scale(1.25, 1);
   }
 
   .header.open .hamburger svg path.bar-3 {
-    -webkit-transform: translate(-45%, 45%) rotate(-45deg) scaleX(125%);
-    transform: translate(-45%, 45%) rotate(-45deg) scaleX(125%);
+    -webkit-transform: translate(-45%, 45%) rotate(-45deg) scale(1.25, 1);
+    transform: translate(-45%, 45%) rotate(-45deg) scale(1.25, 1);
   }
 
   .header.open .dark-overlay {

@@ -28,7 +28,7 @@ add_action( 'init', 'lowtide_register_two_col_main_block' );
 
 function lowtide_two_col_main_render( $attributes, $content ) {
   $markup = '';
-  $markup .= '<main id="content" class="col-md-8 ' . $attributes['className'] . '">';
+  $markup .= '<main id="content" class="col-md-8">';
     $markup .= $content;
   $markup .= '</main>';
   

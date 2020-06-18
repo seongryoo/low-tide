@@ -29,7 +29,7 @@ add_action( 'init', 'lowtide_register_group_block' );
 
 function lowtide_group_block_render( $attributes, $content ) {
   $markup = '';
-  $markup .= '<div class="section ' . $attributes['className'] . '">';
+  $markup .= '<div class="section">';
     $markup .= '<div class="container">';
       $markup .= $content;
     $markup .= '</div>';

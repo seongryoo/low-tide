@@ -30,7 +30,7 @@ function lowtide_quote_block_render( $attributes ) {
   $text = $attributes[ 'content' ];
   
   $markup = '';
-  $markup .= '<blockquote class="card bio-quote ' . $attributes[ 'className' ] . '">';
+  $markup .= '<blockquote class="card bio-quote">';
     $markup .= '<div class="card-body">';
       $markup .= '<p class="quote-text">';
         $markup .= $text;
