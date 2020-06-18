@@ -20,6 +20,10 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   
+  <div class="skip-to-content">
+    <a href="#content" class="skip-link">Skip to content (Press enter)</a>
+  </div>
+  
   <header class="header" id="headerOpen">
     <div class="container overflow">
 
