@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'sealevelsensors' );
 
 /** MySQL database username */
-define( 'DB_USER', 'seong' );
+define( 'DB_USER', 'sslsglobal' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'deet.4shadows' );
+define( 'DB_PASSWORD', 'LH4nsb3rry!!' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );

@@ -1,0 +1,565 @@
+0000.000 (0) Opened log file at time: Thu, 18 Jun 2020 14:38:49 +0000 on https://smartsealevelsensors.globalchange.eas.gatech.edu
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.25 WP: 5.4.2 PHP: 7.3.19 (cgi-fcgi, Linux web-plesk24.gatech.edu 3.10.0-1127.8.2.el7.x86_64 #1 SMP Thu May 7 19:30:37 EDT 2020 x86_64) MySQL: 10.1.45-MariaDB WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 700M (used: 4.9M | 2M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.002 (0) Free space on disk containing Updraft's temporary directory: 365154.2 MB
+0000.003 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.005 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.006 (0) Set semaphore last lock (fd) time to 2020-06-18 14:38:49
+0000.007 (0) Semaphore lock (fd) complete
+0000.008 (0) Backup run: resumption=0, nonce=d4f20d3efc66, file_nonce=d4f20d3efc66 begun at=1592491129 (0s ago), job type=backup
+0000.009 (0) Scheduling a resumption (1) after 300 seconds (1592491429) in case this run gets aborted
+0000.029 (0) Checking if we have a zip executable available
+0000.031 (0) Creation of backups of directories: beginning
+0000.032 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0005.271 (0) Total entities for the zip file: 1010 directories, 10517 files (0 skipped as non-modified), 68.4 MB
+0005.275 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0005.341 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 100 files added (on-disk size: 218.7 KB)
+0005.387 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 200 files added (on-disk size: 218.7 KB)
+0005.436 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 300 files added (on-disk size: 218.7 KB)
+0005.486 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 400 files added (on-disk size: 218.7 KB)
+0005.541 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 500 files added (on-disk size: 218.7 KB)
+0005.543 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.1 MB, 10517 files batched, 501 (502) added so far); re-opening (prior size: 218.7 KB)
+0006.289 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 600 files added (on-disk size: 1561 KB)
+0006.338 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 700 files added (on-disk size: 1561 KB)
+0006.388 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 800 files added (on-disk size: 1561 KB)
+0006.438 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 900 files added (on-disk size: 1561 KB)
+0006.487 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 1000 files added (on-disk size: 1561 KB)
+0006.489 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1 MB, 10517 files batched, 501 (1003) added so far); re-opening (prior size: 1561 KB)
+0006.959 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 1100 files added (on-disk size: 2089.8 KB)
+0007.008 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 1200 files added (on-disk size: 2089.8 KB)
+0007.058 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 1300 files added (on-disk size: 2089.8 KB)
+0007.107 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 1400 files added (on-disk size: 2089.8 KB)
+0007.157 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 1500 files added (on-disk size: 2089.8 KB)
+0007.160 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1 MB, 10517 files batched, 501 (1504) added so far); re-opening (prior size: 2089.8 KB)
+0007.793 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 1600 files added (on-disk size: 2618.4 KB)
+0007.842 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 1700 files added (on-disk size: 2618.4 KB)
+0007.899 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 1800 files added (on-disk size: 2618.4 KB)
+0007.953 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 1900 files added (on-disk size: 2618.4 KB)
+0008.004 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 2000 files added (on-disk size: 2618.4 KB)
+0008.010 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.9 MB, 10517 files batched, 501 (2005) added so far); re-opening (prior size: 2618.4 KB)
+0008.776 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 2100 files added (on-disk size: 3127.9 KB)
+0008.829 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 2200 files added (on-disk size: 3127.9 KB)
+0008.879 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 2300 files added (on-disk size: 3127.9 KB)
+0008.930 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 2400 files added (on-disk size: 3127.9 KB)
+0008.981 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 2500 files added (on-disk size: 3127.9 KB)
+0008.984 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.2 MB, 10517 files batched, 501 (2506) added so far); re-opening (prior size: 3127.9 KB)
+0009.576 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 2600 files added (on-disk size: 3692.4 KB)
+0009.639 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 2700 files added (on-disk size: 3692.4 KB)
+0009.688 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 2800 files added (on-disk size: 3692.4 KB)
+0009.739 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 2900 files added (on-disk size: 3692.4 KB)
+0009.789 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 3000 files added (on-disk size: 3692.4 KB)
+0009.793 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.1 MB, 10517 files batched, 501 (3007) added so far); re-opening (prior size: 3692.4 KB)
+0010.367 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 3100 files added (on-disk size: 4234.1 KB)
+0010.418 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 3200 files added (on-disk size: 4234.1 KB)
+0010.468 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 3300 files added (on-disk size: 4234.1 KB)
+0010.519 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 3400 files added (on-disk size: 4234.1 KB)
+0010.569 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 3500 files added (on-disk size: 4234.1 KB)
+0010.574 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1 MB, 10517 files batched, 501 (3508) added so far); re-opening (prior size: 4234.1 KB)
+0011.186 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 3600 files added (on-disk size: 4758.2 KB)
+0011.243 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 3700 files added (on-disk size: 4758.2 KB)
+0011.295 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 3800 files added (on-disk size: 4758.2 KB)
+0011.343 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 3900 files added (on-disk size: 4758.2 KB)
+0011.392 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 4000 files added (on-disk size: 4758.2 KB)
+0011.397 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1 MB, 10517 files batched, 501 (4009) added so far); re-opening (prior size: 4758.2 KB)
+0011.630 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 4100 files added (on-disk size: 5285.4 KB)
+0011.679 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 4200 files added (on-disk size: 5285.4 KB)
+0011.726 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 4300 files added (on-disk size: 5285.4 KB)
+0011.774 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 4400 files added (on-disk size: 5285.4 KB)
+0011.821 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 4500 files added (on-disk size: 5285.4 KB)
+0011.827 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.9 MB, 10517 files batched, 501 (4510) added so far); re-opening (prior size: 5285.4 KB)
+0012.019 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 4600 files added (on-disk size: 5791.9 KB)
+0012.077 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 4700 files added (on-disk size: 5791.9 KB)
+0012.127 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 4800 files added (on-disk size: 5791.9 KB)
+0012.176 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 4900 files added (on-disk size: 5791.9 KB)
+0012.225 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 5000 files added (on-disk size: 5791.9 KB)
+0012.231 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.9 MB, 10517 files batched, 501 (5011) added so far); re-opening (prior size: 5791.9 KB)
+0012.435 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 5100 files added (on-disk size: 6281.9 KB)
+0012.483 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 5200 files added (on-disk size: 6281.9 KB)
+0012.535 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 5300 files added (on-disk size: 6281.9 KB)
+0012.585 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 5400 files added (on-disk size: 6281.9 KB)
+0012.638 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 5500 files added (on-disk size: 6281.9 KB)
+0012.644 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1 MB, 10517 files batched, 501 (5512) added so far); re-opening (prior size: 6281.9 KB)
+0012.847 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 5600 files added (on-disk size: 6796.7 KB)
+0012.895 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 5700 files added (on-disk size: 6796.7 KB)
+0012.937 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 5800 files added (on-disk size: 6796.7 KB)
+0012.978 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 5900 files added (on-disk size: 6796.7 KB)
+0013.017 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 6000 files added (on-disk size: 6796.7 KB)
+0013.023 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.7 MB, 10517 files batched, 501 (6013) added so far); re-opening (prior size: 6796.7 KB)
+0013.268 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 6100 files added (on-disk size: 7453 KB)
+0013.312 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 6200 files added (on-disk size: 7453 KB)
+0013.354 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 6300 files added (on-disk size: 7453 KB)
+0013.392 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 6400 files added (on-disk size: 7453 KB)
+0013.426 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 6500 files added (on-disk size: 7453 KB)
+0013.432 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.4 MB, 10517 files batched, 501 (6514) added so far); re-opening (prior size: 7453 KB)
+0013.981 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 6600 files added (on-disk size: 8981.6 KB)
+0014.010 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 6700 files added (on-disk size: 8981.6 KB)
+0014.041 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 6800 files added (on-disk size: 8981.6 KB)
+0014.069 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 6900 files added (on-disk size: 8981.6 KB)
+0014.110 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 7000 files added (on-disk size: 8981.6 KB)
+0014.116 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (18.4 MB, 10517 files batched, 501 (7015) added so far); re-opening (prior size: 8981.6 KB)
+0015.667 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 7100 files added (on-disk size: 14178.6 KB)
+0015.707 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 7200 files added (on-disk size: 14178.6 KB)
+0015.749 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 7300 files added (on-disk size: 14178.6 KB)
+0015.792 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 7400 files added (on-disk size: 14178.6 KB)
+0015.833 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 7500 files added (on-disk size: 14178.6 KB)
+0015.840 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.7 MB, 10517 files batched, 501 (7516) added so far); re-opening (prior size: 14178.6 KB)
+0016.119 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 7600 files added (on-disk size: 14864.9 KB)
+0016.161 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 7700 files added (on-disk size: 14864.9 KB)
+0016.200 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 7800 files added (on-disk size: 14864.9 KB)
+0016.229 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 7900 files added (on-disk size: 14864.9 KB)
+0016.260 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 8000 files added (on-disk size: 14864.9 KB)
+0016.266 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.2 MB, 10517 files batched, 501 (8017) added so far); re-opening (prior size: 14864.9 KB)
+0016.660 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 8100 files added (on-disk size: 19467 KB)
+0016.691 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 8200 files added (on-disk size: 19467 KB)
+0016.720 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 8300 files added (on-disk size: 19467 KB)
+0016.751 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 8400 files added (on-disk size: 19467 KB)
+0016.781 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 8500 files added (on-disk size: 19467 KB)
+0016.788 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.2 MB, 10517 files batched, 501 (8518) added so far); re-opening (prior size: 19467 KB)
+0017.075 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 8600 files added (on-disk size: 20338.3 KB)
+0017.102 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 8700 files added (on-disk size: 20338.3 KB)
+0017.133 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 8800 files added (on-disk size: 20338.3 KB)
+0017.164 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 8900 files added (on-disk size: 20338.3 KB)
+0017.196 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 9000 files added (on-disk size: 20338.3 KB)
+0017.204 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7.5 MB, 10517 files batched, 501 (9019) added so far); re-opening (prior size: 20338.3 KB)
+0018.177 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 9100 files added (on-disk size: 22448.1 KB)
+0018.207 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 9200 files added (on-disk size: 22448.1 KB)
+0018.237 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 9300 files added (on-disk size: 22448.1 KB)
+0018.270 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 9400 files added (on-disk size: 22448.1 KB)
+0018.307 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 9500 files added (on-disk size: 22448.1 KB)
+0018.315 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.6 MB, 10517 files batched, 501 (9520) added so far); re-opening (prior size: 22448.1 KB)
+0018.823 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 9600 files added (on-disk size: 23906.6 KB)
+0018.857 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 9700 files added (on-disk size: 23906.6 KB)
+0018.894 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 9800 files added (on-disk size: 23906.6 KB)
+0018.926 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 9900 files added (on-disk size: 23906.6 KB)
+0018.957 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 10000 files added (on-disk size: 23906.6 KB)
+0018.964 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.1 MB, 10517 files batched, 501 (10021) added so far); re-opening (prior size: 23906.6 KB)
+0019.419 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 10100 files added (on-disk size: 25290.5 KB)
+0019.446 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 10200 files added (on-disk size: 25290.5 KB)
+0019.472 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 10300 files added (on-disk size: 25290.5 KB)
+0019.498 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 10400 files added (on-disk size: 25290.5 KB)
+0019.524 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip.tmp: 10500 files added (on-disk size: 25290.5 KB)
+0020.147 (0) Created plugins zip (0) - 26106.3 KB in 20.1 s (1298 KB/s) (sha1: 5b5971e3fcbea4bda0a43f3f75a539d4297fc01e, sha256: c422da3a47e255153c5b27d845bd2b2142a03633d3a13220074d7806c7af5853)
+0020.150 (0) Beginning creation of dump of themes (split every: 400 MB)
+0020.290 (0) Total entities for the zip file: 87 directories, 393 files (0 skipped as non-modified), 42.1 MB
+0020.310 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (35.7 MB, 393 files batched, 65 (65) added so far); re-opening (prior size: 0 KB)
+0021.014 (0) A useful amount of data was added after this amount of zip processing: 1.7 s (normalised: 1.2 s, rate: 22046.3 KB/s)
+0021.015 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.6572999954224, normalised_time=1.1611938808132, max_time=21.014012098312, data points known=1, old_max_bytes=26214400, new_max_bytes=209715200)
+0021.026 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-themes.zip.tmp: 100 files added (on-disk size: 36469 KB)
+0021.055 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-themes.zip.tmp: 200 files added (on-disk size: 36469 KB)
+0021.084 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-themes.zip.tmp: 300 files added (on-disk size: 36469 KB)
+0022.255 (0) Created themes zip (0) - 40761.4 KB in 2.1 s (19382.9 KB/s) (sha1: a5424a73972143e074a1e4cd3ae17f232834e83b, sha256: 48269fb9b7b6414a0c0591ce44c2e5ad3eb2ebfda1a519efffe703c05fa8757f)
+0022.257 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0022.257 (0) Looking for candidates to backup in: /var/www/vhosts/smartsealevelsensors.globalchange.eas.gatech.edu/httpdocs/wp-content/uploads
+0022.258 (0) finding files: 2020: adding to list (1)
+0022.258 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0022.290 (0) Total entities for the zip file: 2 directories, 115 files (0 skipped as non-modified), 179 MB
+0022.318 (0) Zip: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0030.101 (0) Created uploads zip (0) - 177250.1 KB in 7.8 s (22603.6 KB/s) (sha1: 3f47d49e1a531130a04b080fb706586529862571, sha256: 54ad6325ce781108c1ddb745aaa60a9eabdc0dda63cb1054a7ac3b7d88f866c0)
+0030.103 (0) Beginning backup of other directories found in the content directory (index: 0)
+0030.104 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0030.104 (0) Looking for candidates to backup in: /var/www/vhosts/smartsealevelsensors.globalchange.eas.gatech.edu/httpdocs/wp-content
+0030.105 (0) finding files: index.php: adding to list (1)
+0030.105 (0) finding files: themes: skipping: this is the themes directory
+0030.105 (0) finding files: updraft: skipping: this is the updraft directory
+0030.106 (0) finding files: upgrade: skipping: excluded by options
+0030.106 (0) finding files: uploads: skipping: this is the uploads directory
+0030.106 (0) finding files: plugins: skipping: this is the plugins directory
+0030.107 (0) finding files: advanced-cache.php: adding to list (2)
+0030.107 (0) finding files: cache: skipping: excluded by options
+0030.107 (0) finding files: w3tc-config: adding to list (3)
+0030.111 (0) Total entities for the zip file: 1 directories, 4 files (0 skipped as non-modified), 0 MB
+0030.404 (0) Created others zip (0) - 7 KB in 0.3 s (23.6 KB/s) (sha1: ea8bff7cc2265cf0e80e5ae5d754516b2418131d, sha256: cba91e9de2a0ecc1829a691b27642435acf2c6e66f6c2dfcf48159d91d3b3052)
+0030.407 (0) Saving backup status to database (elements: 8)
+0030.409 (0) Beginning creation of database dump (WordPress DB)
+0030.463 (0) Table wp_options: Total expected rows (approximate): 275
+0030.519 (0) Table wp_options: Total rows added: 270 in 0.05 seconds
+0030.520 (0) Table wp_options: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_options.table.gz - 193.3 KB)
+0030.522 (0) Table wp_users: Total expected rows (approximate): 3
+0030.524 (0) Table wp_users: Total rows added: 3 in 0.00 seconds
+0030.525 (0) Table wp_users: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_users.table.gz - 0.7 KB)
+0030.527 (0) Table wp_usermeta: Total expected rows (approximate): 65
+0030.529 (0) Table wp_usermeta: Total rows added: 65 in 0.00 seconds
+0030.529 (0) Table wp_usermeta: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_usermeta.table.gz - 2.2 KB)
+0030.534 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0030.536 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0030.536 (0) Table wp_commentmeta: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0030.539 (0) Table wp_comments: Total expected rows (approximate): 14
+0030.540 (0) Table wp_comments: Total rows added: 14 in 0.00 seconds
+0030.541 (0) Table wp_comments: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_comments.table.gz - 1.3 KB)
+0030.545 (0) Table wp_links: Total expected rows (approximate): 0
+0030.547 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0030.547 (0) Table wp_links: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_links.table.gz - 0.4 KB)
+0030.549 (0) Table wp_postmeta: Total expected rows (approximate): 247
+0030.552 (0) Table wp_postmeta: Total rows added: 247 in 0.00 seconds
+0030.553 (0) Table wp_postmeta: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_postmeta.table.gz - 5.1 KB)
+0030.555 (0) Table wp_posts: Total expected rows (approximate): 351
+0030.590 (0) Table wp_posts: Total rows added: 351 in 0.03 seconds
+0030.593 (0) Table wp_posts: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_posts.table.gz - 66.8 KB)
+0030.596 (0) Table wp_term_relationships: Total expected rows (approximate): 16
+0030.598 (0) Table wp_term_relationships: Total rows added: 16 in 0.00 seconds
+0030.598 (0) Table wp_term_relationships: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_term_relationships.table.gz - 0.4 KB)
+0030.600 (0) Table wp_term_taxonomy: Total expected rows (approximate): 5
+0030.602 (0) Table wp_term_taxonomy: Total rows added: 5 in 0.00 seconds
+0030.603 (0) Table wp_term_taxonomy: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_term_taxonomy.table.gz - 0.5 KB)
+0030.607 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0030.609 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0030.609 (0) Table wp_termmeta: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_termmeta.table.gz - 0.4 KB)
+0030.614 (0) Table wp_terms: Total expected rows (approximate): 5
+0030.616 (0) Table wp_terms: Total rows added: 5 in 0.00 seconds
+0030.617 (0) Table wp_terms: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_terms.table.gz - 0.5 KB)
+0030.623 (0) Table wp_yoast_seo_links: Total expected rows (approximate): 17
+0030.625 (0) Table wp_yoast_seo_links: Total rows added: 17 in 0.00 seconds
+0030.625 (0) Table wp_yoast_seo_links: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_yoast_seo_links.table.gz - 0.9 KB)
+0030.631 (0) Table wp_yoast_seo_meta: Total expected rows (approximate): 14
+0030.633 (0) Table wp_yoast_seo_meta: Total rows added: 15 in 0.00 seconds
+0030.634 (0) Table wp_yoast_seo_meta: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_yoast_seo_meta.table.gz - 0.4 KB)
+0030.637 (0) Table wp_yoast_indexable: Total expected rows (approximate): 86
+0030.642 (0) Table wp_yoast_indexable: Total rows added: 89 in 0.00 seconds
+0030.642 (0) Table wp_yoast_indexable: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_yoast_indexable.table.gz - 7 KB)
+0030.649 (0) Table wp_yoast_indexable_hierarchy: Total expected rows (approximate): 62
+0030.651 (0) Table wp_yoast_indexable_hierarchy: Total rows added: 64 in 0.00 seconds
+0030.651 (0) Table wp_yoast_indexable_hierarchy: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_yoast_indexable_hierarchy.table.gz - 0.6 KB)
+0030.657 (0) Table wp_yoast_migrations: Total expected rows (approximate): 13
+0030.660 (0) Table wp_yoast_migrations: Total rows added: 13 in 0.00 seconds
+0030.661 (0) Table wp_yoast_migrations: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_yoast_migrations.table.gz - 0.5 KB)
+0030.667 (0) Table wp_yoast_primary_term: Total expected rows (approximate): 0
+0030.669 (0) Table wp_yoast_primary_term: Total rows added: 1 in 0.00 seconds
+0030.669 (0) Table wp_yoast_primary_term: finishing file (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_yoast_primary_term.table.gz - 0.5 KB)
+0030.671 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_options.table.gz (1/18): adding to final database dump
+0030.706 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_users.table.gz (2/18): adding to final database dump
+0030.707 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_usermeta.table.gz (3/18): adding to final database dump
+0030.708 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_commentmeta.table.gz (4/18): adding to final database dump
+0030.708 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_comments.table.gz (5/18): adding to final database dump
+0030.709 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_links.table.gz (6/18): adding to final database dump
+0030.709 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_postmeta.table.gz (7/18): adding to final database dump
+0030.711 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_posts.table.gz (8/18): adding to final database dump
+0030.728 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_term_relationships.table.gz (9/18): adding to final database dump
+0030.729 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_term_taxonomy.table.gz (10/18): adding to final database dump
+0030.730 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_termmeta.table.gz (11/18): adding to final database dump
+0030.730 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_terms.table.gz (12/18): adding to final database dump
+0030.731 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_yoast_seo_links.table.gz (13/18): adding to final database dump
+0030.731 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_yoast_seo_meta.table.gz (14/18): adding to final database dump
+0030.732 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_yoast_indexable.table.gz (15/18): adding to final database dump
+0030.734 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_yoast_indexable_hierarchy.table.gz (16/18): adding to final database dump
+0030.734 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_yoast_migrations.table.gz (17/18): adding to final database dump
+0030.734 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db-table-wp_yoast_primary_term.table.gz (18/18): adding to final database dump
+0030.741 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db.gz: finished writing out complete database file (272 KB)
+0030.749 (0) Total database tables backed up: 18 (backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db.gz, size: 283905, sha1: 56e829c0c3a55834a25e5e75e4f5219ad6e10cce, sha256: 28d5c11b565ad7fd4ea6bb03024f180c6d248dff01e3e48b7a24f88287732d33)
+0030.753 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0030.753 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0030.754 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0030.754 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-others.zip: others: This file has not yet been successfully uploaded: will queue
+0030.754 (0) backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db.gz: db: This file has not yet been successfully uploaded: will queue
+0030.755 (0) Saving backup history. Total backup size: 238.7 MB
+0030.756 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0030.758 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0030.758 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-b53c8bce66b2d02a5dcd85a604453dd2)
+0034.046 (0) Google Drive: quota usage: used=588.8 MB, total=15360 MB, available=14771.2 MB
+0034.047 (0) Google Drive: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip: Attempting to upload to Google Drive (into folder id: 1IqW7kFiYrRvzJWNtTfG45y6AsnFvOaig)
+0034.345 (0) Googledrive chunked upload: 3.9 % uploaded (1048576)
+0034.425 (0) Googledrive chunked upload: 7.8 % uploaded (2097152)
+0034.497 (0) Googledrive chunked upload: 11.8 % uploaded (3145728)
+0034.581 (0) Googledrive chunked upload: 15.7 % uploaded (4194304)
+0034.659 (0) Googledrive chunked upload: 19.6 % uploaded (5242880)
+0034.741 (0) Googledrive chunked upload: 23.5 % uploaded (6291456)
+0034.826 (0) Googledrive chunked upload: 27.5 % uploaded (7340032)
+0034.894 (0) Googledrive chunked upload: 31.4 % uploaded (8388608)
+0034.974 (0) Googledrive chunked upload: 35.3 % uploaded (9437184)
+0035.077 (0) Googledrive chunked upload: 39.2 % uploaded (10485760)
+0035.154 (0) Googledrive chunked upload: 43.1 % uploaded (11534336)
+0035.280 (0) Googledrive chunked upload: 47.1 % uploaded (12582912)
+0035.361 (0) Googledrive chunked upload: 51 % uploaded (13631488)
+0035.443 (0) Googledrive chunked upload: 54.9 % uploaded (14680064)
+0035.517 (0) Googledrive chunked upload: 58.8 % uploaded (15728640)
+0035.596 (0) Googledrive chunked upload: 62.8 % uploaded (16777216)
+0035.671 (0) Googledrive chunked upload: 66.7 % uploaded (17825792)
+0035.739 (0) Googledrive chunked upload: 70.6 % uploaded (18874368)
+0035.816 (0) Googledrive chunked upload: 74.5 % uploaded (19922944)
+0035.890 (0) Googledrive chunked upload: 78.4 % uploaded (20971520)
+0036.003 (0) Googledrive chunked upload: 82.4 % uploaded (22020096)
+0036.086 (0) Googledrive chunked upload: 86.3 % uploaded (23068672)
+0036.195 (0) Googledrive chunked upload: 90.2 % uploaded (24117248)
+0036.278 (0) Googledrive chunked upload: 94.1 % uploaded (25165824)
+0036.359 (0) Googledrive chunked upload: 98.1 % uploaded (26214400)
+0037.335 (0) Googledrive chunked upload: 100 % uploaded (26214400)
+0037.337 (0) Google Drive: OK: Archive backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip uploaded in 3.29 seconds
+0037.338 (0) Recording as successfully uploaded: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip
+0037.346 (0) Deleting local file: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-plugins.zip: OK
+0037.521 (0) Google Drive: quota usage: used=614.3 MB, total=15360 MB, available=14745.7 MB
+0037.522 (0) Google Drive: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-themes.zip: Attempting to upload to Google Drive (into folder id: 1IqW7kFiYrRvzJWNtTfG45y6AsnFvOaig)
+0037.927 (0) Googledrive chunked upload: 2.5 % uploaded (1048576)
+0038.070 (0) Googledrive chunked upload: 5 % uploaded (2097152)
+0038.200 (0) Googledrive chunked upload: 7.5 % uploaded (3145728)
+0038.320 (0) Googledrive chunked upload: 10 % uploaded (4194304)
+0038.444 (0) Googledrive chunked upload: 12.6 % uploaded (5242880)
+0038.566 (0) Googledrive chunked upload: 15.1 % uploaded (6291456)
+0038.654 (0) Googledrive chunked upload: 17.6 % uploaded (7340032)
+0038.799 (0) Googledrive chunked upload: 20.1 % uploaded (8388608)
+0038.905 (0) Googledrive chunked upload: 22.6 % uploaded (9437184)
+0039.032 (0) Googledrive chunked upload: 25.1 % uploaded (10485760)
+0039.154 (0) Googledrive chunked upload: 27.6 % uploaded (11534336)
+0039.281 (0) Googledrive chunked upload: 30.1 % uploaded (12582912)
+0039.414 (0) Googledrive chunked upload: 32.7 % uploaded (13631488)
+0039.536 (0) Googledrive chunked upload: 35.2 % uploaded (14680064)
+0039.657 (0) Googledrive chunked upload: 37.7 % uploaded (15728640)
+0039.785 (0) Googledrive chunked upload: 40.2 % uploaded (16777216)
+0039.866 (0) Googledrive chunked upload: 42.7 % uploaded (17825792)
+0039.983 (0) Googledrive chunked upload: 45.2 % uploaded (18874368)
+0040.074 (0) Googledrive chunked upload: 47.7 % uploaded (19922944)
+0040.235 (0) Googledrive chunked upload: 50.2 % uploaded (20971520)
+0040.392 (0) Googledrive chunked upload: 52.8 % uploaded (22020096)
+0040.486 (0) Googledrive chunked upload: 55.3 % uploaded (23068672)
+0040.635 (0) Googledrive chunked upload: 57.8 % uploaded (24117248)
+0040.783 (0) Googledrive chunked upload: 60.3 % uploaded (25165824)
+0040.948 (0) Googledrive chunked upload: 62.8 % uploaded (26214400)
+0041.051 (0) Googledrive chunked upload: 65.3 % uploaded (27262976)
+0041.286 (0) Googledrive chunked upload: 67.8 % uploaded (28311552)
+0041.419 (0) Googledrive chunked upload: 70.3 % uploaded (29360128)
+0041.553 (0) Googledrive chunked upload: 72.9 % uploaded (30408704)
+0041.699 (0) Googledrive chunked upload: 75.4 % uploaded (31457280)
+0041.838 (0) Googledrive chunked upload: 77.9 % uploaded (32505856)
+0042.038 (0) Googledrive chunked upload: 80.4 % uploaded (33554432)
+0042.168 (0) Googledrive chunked upload: 82.9 % uploaded (34603008)
+0042.294 (0) Googledrive chunked upload: 85.4 % uploaded (35651584)
+0042.375 (0) Googledrive chunked upload: 87.9 % uploaded (36700160)
+0042.495 (0) Googledrive chunked upload: 90.4 % uploaded (37748736)
+0042.620 (0) Googledrive chunked upload: 93 % uploaded (38797312)
+0042.707 (0) Googledrive chunked upload: 95.5 % uploaded (39845888)
+0042.791 (0) Googledrive chunked upload: 98 % uploaded (40894464)
+0043.676 (0) Googledrive chunked upload: 100 % uploaded (40894464)
+0043.678 (0) Google Drive: OK: Archive backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-themes.zip uploaded in 6.15 seconds
+0043.678 (0) Recording as successfully uploaded: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-themes.zip
+0043.693 (0) Deleting local file: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-themes.zip: OK
+0043.914 (0) Google Drive: quota usage: used=654.2 MB, total=15360 MB, available=14705.8 MB
+0043.915 (0) Google Drive: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-uploads.zip: Attempting to upload to Google Drive (into folder id: 1IqW7kFiYrRvzJWNtTfG45y6AsnFvOaig)
+0044.191 (0) Googledrive chunked upload: 0.6 % uploaded (1048576)
+0044.304 (0) Googledrive chunked upload: 1.2 % uploaded (2097152)
+0044.393 (0) Googledrive chunked upload: 1.7 % uploaded (3145728)
+0044.509 (0) Googledrive chunked upload: 2.3 % uploaded (4194304)
+0044.606 (0) Googledrive chunked upload: 2.9 % uploaded (5242880)
+0044.695 (0) Googledrive chunked upload: 3.5 % uploaded (6291456)
+0044.775 (0) Googledrive chunked upload: 4 % uploaded (7340032)
+0044.867 (0) Googledrive chunked upload: 4.6 % uploaded (8388608)
+0045.014 (0) Googledrive chunked upload: 5.2 % uploaded (9437184)
+0045.107 (0) Googledrive chunked upload: 5.8 % uploaded (10485760)
+0045.184 (0) Googledrive chunked upload: 6.4 % uploaded (11534336)
+0045.270 (0) Googledrive chunked upload: 6.9 % uploaded (12582912)
+0045.362 (0) Googledrive chunked upload: 7.5 % uploaded (13631488)
+0045.450 (0) Googledrive chunked upload: 8.1 % uploaded (14680064)
+0045.536 (0) Googledrive chunked upload: 8.7 % uploaded (15728640)
+0045.605 (0) Googledrive chunked upload: 9.2 % uploaded (16777216)
+0045.711 (0) Googledrive chunked upload: 9.8 % uploaded (17825792)
+0045.780 (0) Googledrive chunked upload: 10.4 % uploaded (18874368)
+0045.870 (0) Googledrive chunked upload: 11 % uploaded (19922944)
+0045.952 (0) Googledrive chunked upload: 11.6 % uploaded (20971520)
+0046.089 (0) Googledrive chunked upload: 12.1 % uploaded (22020096)
+0046.173 (0) Googledrive chunked upload: 12.7 % uploaded (23068672)
+0046.278 (0) Googledrive chunked upload: 13.3 % uploaded (24117248)
+0046.383 (0) Googledrive chunked upload: 13.9 % uploaded (25165824)
+0046.486 (0) Googledrive chunked upload: 14.4 % uploaded (26214400)
+0046.579 (0) Googledrive chunked upload: 15 % uploaded (27262976)
+0046.654 (0) Googledrive chunked upload: 15.6 % uploaded (28311552)
+0046.749 (0) Googledrive chunked upload: 16.2 % uploaded (29360128)
+0046.835 (0) Googledrive chunked upload: 16.8 % uploaded (30408704)
+0046.910 (0) Googledrive chunked upload: 17.3 % uploaded (31457280)
+0047.012 (0) Googledrive chunked upload: 17.9 % uploaded (32505856)
+0047.085 (0) Googledrive chunked upload: 18.5 % uploaded (33554432)
+0047.179 (0) Googledrive chunked upload: 19.1 % uploaded (34603008)
+0047.260 (0) Googledrive chunked upload: 19.6 % uploaded (35651584)
+0047.355 (0) Googledrive chunked upload: 20.2 % uploaded (36700160)
+0047.455 (0) Googledrive chunked upload: 20.8 % uploaded (37748736)
+0047.530 (0) Googledrive chunked upload: 21.4 % uploaded (38797312)
+0047.610 (0) Googledrive chunked upload: 22 % uploaded (39845888)
+0047.693 (0) Googledrive chunked upload: 22.5 % uploaded (40894464)
+0047.782 (0) Googledrive chunked upload: 23.1 % uploaded (41943040)
+0047.853 (0) Googledrive chunked upload: 23.7 % uploaded (42991616)
+0047.941 (0) Googledrive chunked upload: 24.3 % uploaded (44040192)
+0048.036 (0) Googledrive chunked upload: 24.8 % uploaded (45088768)
+0048.115 (0) Googledrive chunked upload: 25.4 % uploaded (46137344)
+0048.212 (0) Googledrive chunked upload: 26 % uploaded (47185920)
+0048.313 (0) Googledrive chunked upload: 26.6 % uploaded (48234496)
+0048.424 (0) Googledrive chunked upload: 27.2 % uploaded (49283072)
+0048.504 (0) Googledrive chunked upload: 27.7 % uploaded (50331648)
+0048.594 (0) Googledrive chunked upload: 28.3 % uploaded (51380224)
+0048.688 (0) Googledrive chunked upload: 28.9 % uploaded (52428800)
+0048.778 (0) Googledrive chunked upload: 29.5 % uploaded (53477376)
+0048.864 (0) Googledrive chunked upload: 30 % uploaded (54525952)
+0048.933 (0) Googledrive chunked upload: 30.6 % uploaded (55574528)
+0049.018 (0) Googledrive chunked upload: 31.2 % uploaded (56623104)
+0049.114 (0) Googledrive chunked upload: 31.8 % uploaded (57671680)
+0049.209 (0) Googledrive chunked upload: 32.4 % uploaded (58720256)
+0049.293 (0) Googledrive chunked upload: 32.9 % uploaded (59768832)
+0049.379 (0) Googledrive chunked upload: 33.5 % uploaded (60817408)
+0049.481 (0) Googledrive chunked upload: 34.1 % uploaded (61865984)
+0049.572 (0) Googledrive chunked upload: 34.7 % uploaded (62914560)
+0049.719 (0) Googledrive chunked upload: 35.2 % uploaded (63963136)
+0049.814 (0) Googledrive chunked upload: 35.8 % uploaded (65011712)
+0049.902 (0) Googledrive chunked upload: 36.4 % uploaded (66060288)
+0049.978 (0) Googledrive chunked upload: 37 % uploaded (67108864)
+0050.058 (0) Googledrive chunked upload: 37.6 % uploaded (68157440)
+0050.139 (0) Googledrive chunked upload: 38.1 % uploaded (69206016)
+0050.230 (0) Googledrive chunked upload: 38.7 % uploaded (70254592)
+0050.362 (0) Googledrive chunked upload: 39.3 % uploaded (71303168)
+0050.439 (0) Googledrive chunked upload: 39.9 % uploaded (72351744)
+0050.546 (0) Googledrive chunked upload: 40.4 % uploaded (73400320)
+0050.655 (0) Googledrive chunked upload: 41 % uploaded (74448896)
+0050.744 (0) Googledrive chunked upload: 41.6 % uploaded (75497472)
+0050.839 (0) Googledrive chunked upload: 42.2 % uploaded (76546048)
+0050.920 (0) Googledrive chunked upload: 42.8 % uploaded (77594624)
+0051.028 (0) Googledrive chunked upload: 43.3 % uploaded (78643200)
+0051.113 (0) Googledrive chunked upload: 43.9 % uploaded (79691776)
+0051.213 (0) Googledrive chunked upload: 44.5 % uploaded (80740352)
+0051.299 (0) Googledrive chunked upload: 45.1 % uploaded (81788928)
+0051.390 (0) Googledrive chunked upload: 45.6 % uploaded (82837504)
+0051.462 (0) Googledrive chunked upload: 46.2 % uploaded (83886080)
+0051.538 (0) Googledrive chunked upload: 46.8 % uploaded (84934656)
+0051.617 (0) Googledrive chunked upload: 47.4 % uploaded (85983232)
+0051.699 (0) Googledrive chunked upload: 48 % uploaded (87031808)
+0051.771 (0) Googledrive chunked upload: 48.5 % uploaded (88080384)
+0051.871 (0) Googledrive chunked upload: 49.1 % uploaded (89128960)
+0051.962 (0) Googledrive chunked upload: 49.7 % uploaded (90177536)
+0052.078 (0) Googledrive chunked upload: 50.3 % uploaded (91226112)
+0052.179 (0) Googledrive chunked upload: 50.8 % uploaded (92274688)
+0052.300 (0) Googledrive chunked upload: 51.4 % uploaded (93323264)
+0052.378 (0) Googledrive chunked upload: 52 % uploaded (94371840)
+0052.471 (0) Googledrive chunked upload: 52.6 % uploaded (95420416)
+0052.573 (0) Googledrive chunked upload: 53.1 % uploaded (96468992)
+0052.680 (0) Googledrive chunked upload: 53.7 % uploaded (97517568)
+0052.812 (0) Googledrive chunked upload: 54.3 % uploaded (98566144)
+0052.903 (0) Googledrive chunked upload: 54.9 % uploaded (99614720)
+0053.020 (0) Googledrive chunked upload: 55.5 % uploaded (100663296)
+0053.139 (0) Googledrive chunked upload: 56 % uploaded (101711872)
+0053.225 (0) Googledrive chunked upload: 56.6 % uploaded (102760448)
+0053.307 (0) Googledrive chunked upload: 57.2 % uploaded (103809024)
+0053.390 (0) Googledrive chunked upload: 57.8 % uploaded (104857600)
+0053.504 (0) Googledrive chunked upload: 58.3 % uploaded (105906176)
+0053.615 (0) Googledrive chunked upload: 58.9 % uploaded (106954752)
+0053.696 (0) Googledrive chunked upload: 59.5 % uploaded (108003328)
+0053.789 (0) Googledrive chunked upload: 60.1 % uploaded (109051904)
+0053.862 (0) Googledrive chunked upload: 60.7 % uploaded (110100480)
+0053.973 (0) Googledrive chunked upload: 61.2 % uploaded (111149056)
+0054.056 (0) Googledrive chunked upload: 61.8 % uploaded (112197632)
+0054.135 (0) Googledrive chunked upload: 62.4 % uploaded (113246208)
+0054.226 (0) Googledrive chunked upload: 63 % uploaded (114294784)
+0054.336 (0) Googledrive chunked upload: 63.5 % uploaded (115343360)
+0054.442 (0) Googledrive chunked upload: 64.1 % uploaded (116391936)
+0054.522 (0) Googledrive chunked upload: 64.7 % uploaded (117440512)
+0054.648 (0) Googledrive chunked upload: 65.3 % uploaded (118489088)
+0054.726 (0) Googledrive chunked upload: 65.9 % uploaded (119537664)
+0054.838 (0) Googledrive chunked upload: 66.4 % uploaded (120586240)
+0054.937 (0) Googledrive chunked upload: 67 % uploaded (121634816)
+0055.055 (0) Googledrive chunked upload: 67.6 % uploaded (122683392)
+0055.227 (0) Googledrive chunked upload: 68.2 % uploaded (123731968)
+0055.316 (0) Googledrive chunked upload: 68.7 % uploaded (124780544)
+0055.418 (0) Googledrive chunked upload: 69.3 % uploaded (125829120)
+0055.498 (0) Googledrive chunked upload: 69.9 % uploaded (126877696)
+0055.625 (0) Googledrive chunked upload: 70.5 % uploaded (127926272)
+0055.740 (0) Googledrive chunked upload: 71.1 % uploaded (128974848)
+0055.828 (0) Googledrive chunked upload: 71.6 % uploaded (130023424)
+0055.932 (0) Googledrive chunked upload: 72.2 % uploaded (131072000)
+0056.004 (0) Googledrive chunked upload: 72.8 % uploaded (132120576)
+0056.087 (0) Googledrive chunked upload: 73.4 % uploaded (133169152)
+0056.173 (0) Googledrive chunked upload: 73.9 % uploaded (134217728)
+0056.262 (0) Googledrive chunked upload: 74.5 % uploaded (135266304)
+0056.384 (0) Googledrive chunked upload: 75.1 % uploaded (136314880)
+0056.465 (0) Googledrive chunked upload: 75.7 % uploaded (137363456)
+0056.564 (0) Googledrive chunked upload: 76.3 % uploaded (138412032)
+0056.655 (0) Googledrive chunked upload: 76.8 % uploaded (139460608)
+0056.746 (0) Googledrive chunked upload: 77.4 % uploaded (140509184)
+0056.853 (0) Googledrive chunked upload: 78 % uploaded (141557760)
+0056.933 (0) Googledrive chunked upload: 78.6 % uploaded (142606336)
+0057.016 (0) Googledrive chunked upload: 79.1 % uploaded (143654912)
+0057.138 (0) Googledrive chunked upload: 79.7 % uploaded (144703488)
+0057.230 (0) Googledrive chunked upload: 80.3 % uploaded (145752064)
+0057.334 (0) Googledrive chunked upload: 80.9 % uploaded (146800640)
+0057.418 (0) Googledrive chunked upload: 81.5 % uploaded (147849216)
+0057.493 (0) Googledrive chunked upload: 82 % uploaded (148897792)
+0057.579 (0) Googledrive chunked upload: 82.6 % uploaded (149946368)
+0057.673 (0) Googledrive chunked upload: 83.2 % uploaded (150994944)
+0057.757 (0) Googledrive chunked upload: 83.8 % uploaded (152043520)
+0057.832 (0) Googledrive chunked upload: 84.3 % uploaded (153092096)
+0057.929 (0) Googledrive chunked upload: 84.9 % uploaded (154140672)
+0058.034 (0) Googledrive chunked upload: 85.5 % uploaded (155189248)
+0058.121 (0) Googledrive chunked upload: 86.1 % uploaded (156237824)
+0058.231 (0) Googledrive chunked upload: 86.7 % uploaded (157286400)
+0058.319 (0) Googledrive chunked upload: 87.2 % uploaded (158334976)
+0058.407 (0) Googledrive chunked upload: 87.8 % uploaded (159383552)
+0058.503 (0) Googledrive chunked upload: 88.4 % uploaded (160432128)
+0058.610 (0) Googledrive chunked upload: 89 % uploaded (161480704)
+0058.693 (0) Googledrive chunked upload: 89.5 % uploaded (162529280)
+0058.796 (0) Googledrive chunked upload: 90.1 % uploaded (163577856)
+0058.883 (0) Googledrive chunked upload: 90.7 % uploaded (164626432)
+0058.971 (0) Googledrive chunked upload: 91.3 % uploaded (165675008)
+0059.051 (0) Googledrive chunked upload: 91.9 % uploaded (166723584)
+0059.156 (0) Googledrive chunked upload: 92.4 % uploaded (167772160)
+0059.267 (0) Googledrive chunked upload: 93 % uploaded (168820736)
+0059.347 (0) Googledrive chunked upload: 93.6 % uploaded (169869312)
+0059.426 (0) Googledrive chunked upload: 94.2 % uploaded (170917888)
+0059.514 (0) Googledrive chunked upload: 94.7 % uploaded (171966464)
+0059.611 (0) Googledrive chunked upload: 95.3 % uploaded (173015040)
+0059.695 (0) Googledrive chunked upload: 95.9 % uploaded (174063616)
+0059.776 (0) Googledrive chunked upload: 96.5 % uploaded (175112192)
+0059.870 (0) Googledrive chunked upload: 97.1 % uploaded (176160768)
+0059.945 (0) Googledrive chunked upload: 97.6 % uploaded (177209344)
+0060.034 (0) Googledrive chunked upload: 98.2 % uploaded (178257920)
+0060.132 (0) Googledrive chunked upload: 98.8 % uploaded (179306496)
+0060.235 (0) Googledrive chunked upload: 99.4 % uploaded (180355072)
+0060.336 (0) Googledrive chunked upload: 99.9 % uploaded (181403648)
+0061.152 (0) Googledrive chunked upload: 100 % uploaded (181403648)
+0061.154 (0) Google Drive: OK: Archive backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-uploads.zip uploaded in 17.24 seconds
+0061.154 (0) Recording as successfully uploaded: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-uploads.zip
+0061.202 (0) Deleting local file: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-uploads.zip: OK
+0061.360 (0) Google Drive: quota usage: used=827.2 MB, total=15360 MB, available=14532.8 MB
+0061.361 (0) Google Drive: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-others.zip: Attempting to upload to Google Drive (into folder id: 1IqW7kFiYrRvzJWNtTfG45y6AsnFvOaig)
+0063.785 (0) Googledrive chunked upload: 100 % uploaded
+0063.787 (0) Google Drive: OK: Archive backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-others.zip uploaded in 2.43 seconds
+0063.788 (0) Recording as successfully uploaded: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-others.zip
+0063.789 (0) Deleting local file: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-others.zip: OK
+0064.062 (0) Google Drive: quota usage: used=827.3 MB, total=15360 MB, available=14532.7 MB
+0064.063 (0) Google Drive: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db.gz: Attempting to upload to Google Drive (into folder id: 1IqW7kFiYrRvzJWNtTfG45y6AsnFvOaig)
+0065.007 (0) Googledrive chunked upload: 100 % uploaded
+0065.009 (0) Google Drive: OK: Archive backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db.gz uploaded in 0.94 seconds
+0065.009 (0) Recording as successfully uploaded: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db.gz
+0065.010 (0) Deleting local file: backup_2020-06-18-1438_Smart_Sea_Level_Sensors_d4f20d3efc66-db.gz: OK
+0065.012 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0065.013 (0) Number of backup sets in history: 3; groups (db): 1
+0065.013 (0) Examining (for databases) backup set with group_id=0, nonce=d4f20d3efc66, datestamp=1592491129 (Jun 18 2020 14:38:49)
+0065.014 (0) This backup set is the backup set just made, so will not be deleted.
+0065.014 (0) Examining (for databases) backup set with group_id=0, nonce=7d8874bd4b95, datestamp=1592441924 (Jun 18 2020 00:58:44)
+0065.014 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0065.014 (0) Examining (for databases) backup set with group_id=0, nonce=e9701955a03d, datestamp=1592430271 (Jun 17 2020 21:44:31)
+0065.014 (0) 1592430271: db: this set includes a database (backup_2020-06-17-2144_Smart_Sea_Level_Sensors_e9701955a03d-db.gz); db count is now 2
+0065.014 (0) 1592430271: db: over retain limit (2); will delete this database
+0065.014 (0) Delete file: backup_2020-06-17-2144_Smart_Sea_Level_Sensors_e9701955a03d-db.gz, service=googledrive
+0065.980 (0) Google Drive: backup_2020-06-17-2144_Smart_Sea_Level_Sensors_e9701955a03d-db.gz: Deletion successful
+0065.982 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0065.982 (0) Number of backup sets in history: 3; groups (files): 1
+0065.982 (0) Examining (for files) backup set with nonce=d4f20d3efc66, datestamp=1592491129 (Jun 18 2020 14:38:49)
+0065.982 (0) This backup set is the backup set just made, so will not be deleted.
+0065.983 (0) This backup set is the backup set just made, so will not be deleted.
+0065.983 (0) This backup set is the backup set just made, so will not be deleted.
+0065.983 (0) This backup set is the backup set just made, so will not be deleted.
+0065.983 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0065.983 (0) Examining (for files) backup set with nonce=7d8874bd4b95, datestamp=1592441924 (Jun 18 2020 00:58:44)
+0065.983 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0065.983 (0) Examining (for files) backup set with nonce=e9701955a03d, datestamp=1592430271 (Jun 17 2020 21:44:31)
+0065.983 (0) plugins: over retain limit (2); will delete this file entity
+0065.983 (0) themes: over retain limit (2); will delete this file entity
+0065.983 (0) uploads: over retain limit (2); will delete this file entity
+0065.983 (0) others: over retain limit (2); will delete this file entity
+0065.983 (0) Delete file: backup_2020-06-17-2144_Smart_Sea_Level_Sensors_e9701955a03d-plugins.zip, service=googledrive
+0065.984 (0) Delete file: backup_2020-06-17-2144_Smart_Sea_Level_Sensors_e9701955a03d-themes.zip, service=googledrive
+0065.984 (0) Delete file: backup_2020-06-17-2144_Smart_Sea_Level_Sensors_e9701955a03d-uploads.zip, service=googledrive
+0065.984 (0) Delete file: backup_2020-06-17-2144_Smart_Sea_Level_Sensors_e9701955a03d-others.zip, service=googledrive
+0066.609 (0) Google Drive: backup_2020-06-17-2144_Smart_Sea_Level_Sensors_e9701955a03d-others.zip: Deletion successful
+0067.069 (0) Google Drive: backup_2020-06-17-2144_Smart_Sea_Level_Sensors_e9701955a03d-uploads.zip: Deletion successful
+0067.495 (0) Google Drive: backup_2020-06-17-2144_Smart_Sea_Level_Sensors_e9701955a03d-themes.zip: Deletion successful
+0068.003 (0) Google Drive: backup_2020-06-17-2144_Smart_Sea_Level_Sensors_e9701955a03d-plugins.zip: Deletion successful
+0068.005 (0) This backup set is now empty; will remove from history
+0068.006 (0) Deleting log file (log.e9701955a03d.txt)
+0068.006 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0068.008 (0) Resume backup (d4f20d3efc66, 0): finish run
+0068.010 (0) Decremented the semaphore (fd) by 1
+0068.010 (0) Semaphore (fd) unlocked
+0068.011 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0068.012 (0) No email will/can be sent - the user has not configured an email address.
+0068.013 (0) The backup apparently succeeded and is now complete
