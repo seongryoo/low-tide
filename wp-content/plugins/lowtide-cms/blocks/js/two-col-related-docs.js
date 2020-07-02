@@ -1,6 +1,6 @@
 /* Two Col Related Docs block -------------------------------------- */
 var twoColRelatedDocsArgs = {
-  title: '(GCP) Two Column: Related documents list',
+  title: '(SSLS) Two Column: Related documents list',
   category: 'lowtide-blocks',
   icon: 'images-alt',
 

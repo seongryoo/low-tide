@@ -1,6 +1,6 @@
 /* File upload block --------------------------------------------- */
 var fileUploadArgs = {
-  title: '(GCP) File Link',
+  title: '(SSLS) File Link',
   category: 'lowtide-blocks',
   icon: 'upload',
 

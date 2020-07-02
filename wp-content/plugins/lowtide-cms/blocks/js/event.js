@@ -1,40 +1,3 @@
-const displayDateFromString = function( dateString ) {
-  if ( dateString == undefined ) {
-    return 'Please choose a date!';
-  }
-  
-  let dateObj = new Date( dateString );
-  
-  // l F jS, Y -> e.g. Monday January 1st, 1999
-  let dateFormatted = wp.date.date( 'l F jS, Y', dateObj );
-  
-  return dateFormatted;
-}
-
-const displayTimeFromString = function( dateString ) {
-  if ( dateString == undefined ) {
-    return 'Please choose a date!';
-  }
-  
-  let dateObj = new Date( dateString );
-  
-  // g:i A -> e.g. 5:02 PM
-  let dateFormatted = wp.date.date( 'g:i A', dateObj );
-  
-  return dateFormatted;
-}
-
-const getHours = function( dateString ) {
-  if ( dateString == undefined ) {
-    return 0;
-  }
-  
-  
-  let dateObj = wp.date.getDate( dateString );
-  
-  return dateObj.getHours();
-}
-
 const eventEdit = function( props ) {
   
   let updateDate = function( newDate ) {
@@ -121,7 +84,7 @@ const eventEdit = function( props ) {
 }
 
 const eventArgs = {
-  title: '(GCP) Event Data',
+  title: '(SSLS) Event Block',
   category: 'lowtide-blocks',
   icon: 'calendar-alt',
   

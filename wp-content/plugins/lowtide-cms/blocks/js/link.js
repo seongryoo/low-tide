@@ -1,5 +1,5 @@
 var linkArgs = {
-  title: '(GCP) Related documents web link',
+  title: '(SSLS) Related documents web link',
   category: 'lowtide-blocks',
   icon: 'admin-links',
   

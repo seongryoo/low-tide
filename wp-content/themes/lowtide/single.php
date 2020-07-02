@@ -43,7 +43,7 @@
 
                   $markup .= '<div class="bio-block-info">';
                     $markup .= '<a class="author-link" href="' . $authorURL . '" aria-label="Visit ' . $author . '\'s profile"><p class="blog-post-author">' . get_the_author() . '</p></a>';
-                    $markup .= '<p class="blog-post-date">' . get_the_date( 'M n, Y' ) . '</p>';
+                    $markup .= '<p class="blog-post-date">' . get_the_date( 'M j, Y' ) . '</p>';
                   $markup .= '</div>';
 
                 $markup .= '</div>';

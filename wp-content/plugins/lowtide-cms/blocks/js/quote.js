@@ -1,6 +1,6 @@
 /* Quote block -------------------------------------- */
 var quoteArgs = {
-  title: '(GCP) Quote Block',
+  title: '(SSLS) Quote Block',
   category: 'lowtide-blocks',
   icon: 'admin-comments',
 

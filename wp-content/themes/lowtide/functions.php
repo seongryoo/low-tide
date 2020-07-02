@@ -1,5 +1,6 @@
 <?php
 
+require get_template_directory() . '/engines/engines-events.php';
 
 /* A useful helper method */
 function scream( $msg ) {

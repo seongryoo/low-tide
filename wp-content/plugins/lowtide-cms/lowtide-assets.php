@@ -7,7 +7,14 @@ function lowtide_load_blocks() {
   
   wp_enqueue_script(
     'lowtide-blocks',
-    plugins_url( 'js/lowtide-blocks.js', __FILE__),
+    plugins_url( 'js/lowtide-blocks.js', __FILE__ ),
+    array( 'wp-blocks', 'wp-i18n', 'wp-editor', 'wp-date' ),
+    true
+  );
+
+  wp_enqueue_script(
+    'lowtide-event-helpers',
+    plugins_url( 'js/event-helpers.js', __FILE__ ),
     array( 'wp-blocks', 'wp-i18n', 'wp-editor', 'wp-date' ),
     true
   );
@@ -17,6 +24,7 @@ function lowtide_load_blocks() {
     'card',
     'contained-width',
     'event',
+    'event-data',
     'file-upload',
     'group',
     'link',
@@ -30,6 +38,7 @@ function lowtide_load_blocks() {
     'wp-i18n',
     'wp-editor',
     'wp-date',
+    'lowtide-event-helpers',
   );
   
   foreach ( $scripts as $tag ) {

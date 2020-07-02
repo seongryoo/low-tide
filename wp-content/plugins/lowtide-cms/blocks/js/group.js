@@ -1,6 +1,6 @@
 /* Section block -------------------------------------- */
 var groupArgs = {
-  title: '(GCP) Section Block',
+  title: '(SSLS) Section Block',
   category: 'lowtide-blocks',
   icon: 'editor-insertmore',
 

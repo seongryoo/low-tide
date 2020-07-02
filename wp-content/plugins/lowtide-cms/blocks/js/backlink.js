@@ -1,6 +1,6 @@
 /* Back link ---------------------------------------------- */
 var backArgs = {
-  title: '(GCP) Breadcrumbs back link',
+  title: '(SSLS) Breadcrumbs back link',
   category: 'lowtide-blocks',
   icon: 'undo',
 

@@ -1,7 +1,7 @@
 
 /* Two Col Main block -------------------------------------- */
 var twoColMainArgs = {
-  title: '(GCP) Two Column: Main column',
+  title: '(SSLS) Two Column: Main column',
   category: 'lowtide-blocks',
   icon: 'text',
 

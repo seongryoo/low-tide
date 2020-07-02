@@ -8,8 +8,8 @@ function lowtide_block_category( $categories, $post ) {
     array(
       array(
         'slug' => 'lowtide-blocks',
-        'title' => __( 'Global Change', 'lowtide-blocks' ),
-        'icon' => 'dashicons-admin-site-alt',
+        'title' => __( 'Sea Level Sensors', 'lowtide-blocks' ),
+        'icon' => 'dashicons-sos',
       ),
     )
   );

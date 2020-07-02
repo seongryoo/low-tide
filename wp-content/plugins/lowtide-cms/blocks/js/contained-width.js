@@ -1,6 +1,6 @@
 /* Width container block -------------------------------------- */
 var containerArgs = {
-  title: '(GCP) Width Container',
+  title: '(SSLS) Width Container',
   category: 'lowtide-blocks',
   icon: 'editor-contract',
 

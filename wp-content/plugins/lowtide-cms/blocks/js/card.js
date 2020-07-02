@@ -1,6 +1,6 @@
 /* Card block -------------------------------------- */
 var cardArgs = {
-  title: '(GCP) Bevel Card',
+  title: '(SSLS) Bevel Card',
   category: 'lowtide-blocks',
   icon: 'format-aside',
 
