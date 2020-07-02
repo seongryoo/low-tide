@@ -9,7 +9,7 @@
   <div class="section">
     <div class="container">
       <div class="row justify-content-md-center">
-        <div class="col-md-9">
+        <div class="col-md-12">
           <h2>Events</h2>
 
           <div class="events upcoming">
@@ -27,3 +27,5 @@
     </div>
     </div>
   </main>
+
+  <?php get_footer(); ?>
