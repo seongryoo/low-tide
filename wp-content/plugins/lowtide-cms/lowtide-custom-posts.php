@@ -67,3 +67,39 @@ function lowtide_register_block_template() {
 }
 
 add_action( 'init', 'lowtide_register_block_template' );
+
+
+//Add metadata columns to admin
+add_filter( 'manage_post_event_posts_columns',
+  'lowtide_events_custom_columns' );
+
+function lowtide_events_custom_columns( $columns ) {
+  unset( $columns[ 'date' ] );
+  $columns[ 'event_date' ] = 'Event date';
+  $columns[ 'event_status' ] = 'Status';
+  $columns[ 'date' ] = 'Publish date';
+  return $columns;
+}
+
+add_action( 'manage_post_event_posts_custom_column', 
+  'lowtide_fill_events_columns', 10, 2 );
+
+function lowtide_fill_events_columns( $column, $post_id ) {
+  $dateString = get_post_meta( $post_id, 'post_event_meta_date', true );
+  $dateObj = date_create( $dateString );
+  $dateFormatted = date_format( $dateObj, 'M j, Y' );
+  $dayOfWeek = date_format( $dateObj, 'l' );
+
+
+  $nowDateObj = new DateTime( 'now' );
+  $status = $dateObj > $nowDateObj ? 'Upcoming' : 'Past';
+
+  switch( $column ) {
+    case 'event_date' :
+      echo $dayOfWeek . '<br>' . $dateFormatted;
+      break;
+    case 'event_status' :
+      echo $status;
+      break;
+  }
+}
