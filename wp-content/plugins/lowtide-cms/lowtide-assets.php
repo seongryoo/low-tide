@@ -31,6 +31,7 @@ function lowtide_load_blocks() {
     'quote',
     'two-col-main',
     'two-col-related-docs',
+    'news-link',
   );
   
   $deps = array(
@@ -49,6 +50,9 @@ function lowtide_load_blocks() {
   }
   
   wp_enqueue_style( 'lowtide-admin-style', plugins_url( 'css/admin.css', __FILE__ ));
+  wp_localize_script( 'lowtide-news-link', 'scriptData', array(
+    'pluginUrl' => plugins_url( '', __FILE__ ),
+  ) );
 }
 
 add_action( 'enqueue_block_editor_assets', 'lowtide_load_blocks' );
