@@ -11,16 +11,38 @@
     const calendarArgs = {
       currentDate: getChosenDate(),
       onChange: updateDate,
+      id: 'date-select',
     };
     const calendarElement = el(
         wp.components.DatePicker,
         calendarArgs
     );
+    const calendarLabel = el(
+        'label',
+        {
+          for: 'date-select',
+        },
+        'Event date:'
+    );
+    const calendarWrapped = el(
+        'div',
+        {
+          className: 'components-base-control',
+        },
+        el(
+            'div',
+            {
+              className: 'components-base-control__field',
+            },
+            [calendarLabel, calendarElement]
+        )
+    );
     const timeArgs = {
       onChange: function(value) {
         props.setAttributes({time: value});
       },
-      label: 'Event time (e.g. 8:00 AM - 12:00 PM',
+      label: 'Event time:',
+      placeholder: 'e.g. 8:00 AM - 9:00 AM',
       value: props.attributes.time,
     };
     const time = el(
@@ -31,7 +53,8 @@
       onChange: function(value) {
         props.setAttributes({loc: value});
       },
-      label: 'Event location',
+      label: 'Event location:',
+      placeholder: 'e.g. Georgia Tech',
       value: props.attributes.loc,
     };
     const loc = el(
@@ -42,8 +65,9 @@
       onChange: function(value) {
         props.setAttributes({name: value});
       },
-      label: 'Event name',
+      label: 'Event name:',
       value: props.attributes.name,
+      placeholder: 'Start typing...',
     };
     const name = el(
         wp.components.TextControl,
@@ -53,19 +77,41 @@
       onChange: function(value) {
         props.setAttributes({desc: value});
       },
-      placeholder: 'Event description',
       value: props.attributes.desc,
       multiline: true,
       className: 'event-description',
+      id: 'event-desc',
+      placeholder: 'Start typing...',
     };
     const desc = el(
         wp.editor.RichText,
         descArgs
     );
+    const descLabel = el(
+        'label',
+        {
+          for: 'event-desc',
+        },
+        'Event description:'
+    );
+    const descLabelled = el(
+        'div',
+        {
+          className: 'components-base-control__field',
+        },
+        [descLabel, desc]
+    );
+    const descWrapped = el(
+        'div',
+        {
+          className: 'components-base-control event-description-block',
+        },
+        descLabelled
+    );
     return el(
         'div',
         [],
-        [name, calendarElement, time, loc, desc]
+        [name, calendarWrapped, time, loc, descWrapped]
     );
   };
 

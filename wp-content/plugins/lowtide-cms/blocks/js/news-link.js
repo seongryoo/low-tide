@@ -52,7 +52,7 @@
         {
           for: 'imgButton',
         },
-        'Thumbnail image'
+        'Thumbnail image:'
     );
     const imgDisplay = el(
         'img',
@@ -97,14 +97,15 @@
         {
           for: 'logoButton',
         },
-        'News source logo (optional)'
+        'News source logo:'
     );
     const titleArgs = {
       onChange: function(value) {
         props.setAttributes({title: value});
       },
-      label: 'Article headline',
+      label: 'Article headline:',
       value: props.attributes.title,
+      placeholder: 'Start typing...',
     };
     const title = el(
         wp.components.TextControl,
@@ -114,8 +115,9 @@
       onChange: function(value) {
         props.setAttributes({link: value});
       },
-      label: 'Link to external article',
+      label: 'Link to external article:',
       value: props.attributes.link,
+      placeholder: 'Start typing...',
     };
     const link = el(
         wp.components.TextControl,
@@ -125,9 +127,10 @@
       onChange: function(value) {
         props.setAttributes({aria: value});
       },
-      label: 'Detailed description ' +
+      label: 'Accessible description that can be understood alone: ' +
         '(e.g. "Open external article on AJC titled...")',
       value: props.attributes.aria,
+      placeholder: 'Start typing...',
     };
     const aria = el(
         wp.components.TextControl,
