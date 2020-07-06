@@ -11,17 +11,32 @@
         img_url: media.url,
       });
     };
-    const renderButton = function({open}) {
+    const dashiUpload = el(
+        'span',
+        {
+          'className': 'dashicons dashicons-upload',
+          'aria-hidden': 'true',
+        },
+        ''
+    );
+    const renderImgButton = function({open}) {
       return el(
           wp.components.Button,
-          {onClick: open},
-          'Upload file'
+          {onClick: open, id: 'imgButton', className: 'upload-button'},
+          [dashiUpload, 'Upload file']
+      );
+    };
+    const renderLogoButton = function({open}) {
+      return el(
+          wp.components.Button,
+          {onClick: open, id: 'logoButton', className: 'upload-button'},
+          [dashiUpload, 'Upload file']
       );
     };
     const imgUploadArgs = {
       onSelect: updateImg,
       value: props.attributes.img,
-      render: renderButton,
+      render: renderImgButton,
     };
     const img = el(
         MediaUpload,
@@ -33,14 +48,17 @@
         img
     );
     const imgLabel = el(
-        'p',
-        [],
+        'label',
+        {
+          for: 'imgButton',
+        },
         'Thumbnail image'
     );
     const imgDisplay = el(
         'img',
         {
           id: 'img-display',
+          class: 'uploaded-image-display',
           src: props.attributes.img_url != '' ?
             props.attributes.img_url : placeHolderUrl,
         }
@@ -49,6 +67,7 @@
         'img',
         {
           id: 'logo-display',
+          class: 'uploaded-image-display',
           src: props.attributes.logo_url != '' ?
             props.attributes.logo_url : placeHolderUrl,
         }
@@ -62,7 +81,7 @@
     const logoUploadArgs = {
       onSelect: updateLogo,
       value: props.attributes.logo,
-      render: renderButton,
+      render: renderLogoButton,
     };
     const logo = el(
         MediaUpload,
@@ -74,8 +93,10 @@
         logo
     );
     const logoLabel = el(
-        'p',
-        [],
+        'label',
+        {
+          for: 'logoButton',
+        },
         'News source logo (optional)'
     );
     const titleArgs = {
@@ -112,12 +133,40 @@
         wp.components.TextControl,
         ariaArgs
     );
+    const uploadImageBlock = el(
+        'div',
+        {
+          className: 'components-base-control__field upload-image',
+        },
+        [imgLabel, imgWrapped, imgDisplay]
+    );
+    const uploadLogoBlock = el(
+        'div',
+        {
+          className: 'components-base-control__field upload-logo',
+        },
+        [logoLabel, logoWrapped, logoDisplay]
+    );
+    const uploadImageWrapped = el(
+        'div',
+        {
+          className: 'components-base-control',
+        },
+        uploadImageBlock
+    );
+    const uploadLogoWrapped = el(
+        'div',
+        {
+          className: 'components-base-control',
+        },
+        uploadLogoBlock
+    );
     return el(
         'div',
-        [],
-        [title, link, aria,
-          imgLabel, imgDisplay, imgWrapped,
-          logoLabel, logoDisplay, logoWrapped]
+        {
+          className: 'news-link-data',
+        },
+        [title, link, aria, uploadImageWrapped, uploadLogoWrapped]
     );
   };
   const extNewsDataArgs = {
