@@ -2,6 +2,7 @@
   const el = wp.element.createElement;
   const registerBlock = wp.blocks.registerBlockType;
   const eventDataEdit = function(props) {
+    // Date field
     const updateDate = function(newDate) {
       props.setAttributes({date: newDate});
     };
@@ -37,6 +38,7 @@
             [calendarLabel, calendarElement]
         )
     );
+    // Time field
     const timeArgs = {
       onChange: function(value) {
         props.setAttributes({time: value});
@@ -49,6 +51,7 @@
         wp.components.TextControl,
         timeArgs
     );
+    // Location field
     const locArgs = {
       onChange: function(value) {
         props.setAttributes({loc: value});
@@ -61,6 +64,7 @@
         wp.components.TextControl,
         locArgs
     );
+    // Name field
     const nameArgs = {
       onChange: function(value) {
         props.setAttributes({name: value});
@@ -73,6 +77,7 @@
         wp.components.TextControl,
         nameArgs
     );
+    // Description field
     const descArgs = {
       onChange: function(value) {
         props.setAttributes({desc: value});
@@ -108,6 +113,7 @@
         },
         descLabelled
     );
+    // Final element
     return el(
         'div',
         [],

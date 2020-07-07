@@ -59,6 +59,7 @@ function lowtide_register_ext_news_meta() {
   register_post_meta( 'post_ext_news', 'post_ext_news_meta_logo', $fileArgs );
   register_post_meta( 'post_ext_news', 'post_ext_news_meta_logo_url', $args );
   register_post_meta( 'post_ext_news', 'post_ext_news_meta_link', $args );
+  register_post_meta( 'post_ext_news', 'post_ext_news_meta_date', $args );
   register_post_meta( 'post_ext_news', 'post_ext_news_meta_aria', $args );
 }
 

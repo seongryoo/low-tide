@@ -4,13 +4,44 @@
   const MediaUpload = wp.blockEditor.MediaUpload;
   const MediaUploadCheck = wp.blockEditor.MediaUploadCheck;
   const newsLinkEdit = function(props) {
-    const placeHolderUrl = scriptData.pluginUrl + '/assets/image.png';
-    const updateImg = function(media) {
-      props.setAttributes({
-        img: media.id,
-        img_url: media.url,
-      });
+    // Date field
+    const updateDate = function(newDate) {
+      props.setAttributes({date: newDate});
     };
+    const getChosenDate = function() {
+      return props.attributes.date == undefined ? null : props.attributes.date;
+    };
+    const calendarArgs = {
+      currentDate: getChosenDate(),
+      onChange: updateDate,
+      id: 'date-select',
+    };
+    const calendarElement = el(
+        wp.components.DatePicker,
+        calendarArgs
+    );
+    const calendarLabel = el(
+        'label',
+        {
+          for: 'date-select',
+        },
+        'Publish date:'
+    );
+    const calendarWrapped = el(
+        'div',
+        {
+          className: 'components-base-control',
+        },
+        el(
+            'div',
+            {
+              className: 'components-base-control__field',
+            },
+            [calendarLabel, calendarElement]
+        )
+    );
+    const placeHolderUrl = scriptData.pluginUrl + '/assets/image.png';
+    // Upload icon
     const dashiUpload = el(
         'span',
         {
@@ -19,6 +50,7 @@
         },
         ''
     );
+    // Rendering for button elements
     const renderImgButton = function({open}) {
       return el(
           wp.components.Button,
@@ -33,6 +65,13 @@
           [dashiUpload, 'Upload file']
       );
     };
+    // Image attribute
+    const updateImg = function(media) {
+      props.setAttributes({
+        img: media.id,
+        img_url: media.url,
+      });
+    };
     const imgUploadArgs = {
       onSelect: updateImg,
       value: props.attributes.img,
@@ -42,6 +81,7 @@
         MediaUpload,
         imgUploadArgs
     );
+    // Final elements: imgWrapped, imgLabel, imgDisplay
     const imgWrapped = el(
         MediaUploadCheck,
         [],
@@ -63,15 +103,23 @@
             props.attributes.img_url : placeHolderUrl,
         }
     );
-    const logoDisplay = el(
-        'img',
+    // Combined image block
+    const uploadImageBlock = el(
+        'div',
         {
-          id: 'logo-display',
-          class: 'uploaded-image-display',
-          src: props.attributes.logo_url != '' ?
-            props.attributes.logo_url : placeHolderUrl,
-        }
+          className: 'components-base-control__field upload-image',
+        },
+        [imgLabel, imgWrapped, imgDisplay]
     );
+    // Image block wrapped in admin styling
+    const uploadImageWrapped = el(
+        'div',
+        {
+          className: 'components-base-control',
+        },
+        uploadImageBlock
+    );
+    // Logo element
     const updateLogo = function(media) {
       props.setAttributes({
         logo: media.id,
@@ -87,6 +135,7 @@
         MediaUpload,
         logoUploadArgs
     );
+    // Final elements: logoWrapped, logoLabel, logoDisplay
     const logoWrapped = el(
         MediaUploadCheck,
         [],
@@ -99,6 +148,32 @@
         },
         'News source logo:'
     );
+    const logoDisplay = el(
+        'img',
+        {
+          id: 'logo-display',
+          class: 'uploaded-image-display',
+          src: props.attributes.logo_url != '' ?
+            props.attributes.logo_url : placeHolderUrl,
+        }
+    );
+    // Combined logo block
+    const uploadLogoBlock = el(
+        'div',
+        {
+          className: 'components-base-control__field upload-logo',
+        },
+        [logoLabel, logoWrapped, logoDisplay]
+    );
+    // Logo block wrapped in admin styling
+    const uploadLogoWrapped = el(
+        'div',
+        {
+          className: 'components-base-control',
+        },
+        uploadLogoBlock
+    );
+    // Title
     const titleArgs = {
       onChange: function(value) {
         props.setAttributes({title: value});
@@ -111,6 +186,7 @@
         wp.components.TextControl,
         titleArgs
     );
+    // Link
     const linkArgs = {
       onChange: function(value) {
         props.setAttributes({link: value});
@@ -123,12 +199,13 @@
         wp.components.TextControl,
         linkArgs
     );
+    // Aria label
     const ariaArgs = {
       onChange: function(value) {
         props.setAttributes({aria: value});
       },
       label: 'Accessible description that can be understood alone: ' +
-        '(e.g. "Open external article on AJC titled...")',
+        '(e.g. Read January 10th article "How Sea Level Rise...)',
       value: props.attributes.aria,
       placeholder: 'Start typing...',
     };
@@ -136,40 +213,13 @@
         wp.components.TextControl,
         ariaArgs
     );
-    const uploadImageBlock = el(
-        'div',
-        {
-          className: 'components-base-control__field upload-image',
-        },
-        [imgLabel, imgWrapped, imgDisplay]
-    );
-    const uploadLogoBlock = el(
-        'div',
-        {
-          className: 'components-base-control__field upload-logo',
-        },
-        [logoLabel, logoWrapped, logoDisplay]
-    );
-    const uploadImageWrapped = el(
-        'div',
-        {
-          className: 'components-base-control',
-        },
-        uploadImageBlock
-    );
-    const uploadLogoWrapped = el(
-        'div',
-        {
-          className: 'components-base-control',
-        },
-        uploadLogoBlock
-    );
     return el(
         'div',
         {
           className: 'news-link-data',
         },
-        [title, link, aria, uploadImageWrapped, uploadLogoWrapped]
+        [title, calendarWrapped, link,
+          aria, uploadImageWrapped, uploadLogoWrapped]
     );
   };
   const extNewsDataArgs = {
@@ -211,6 +261,11 @@
         type: 'string',
         source: 'meta',
         meta: 'post_ext_news_meta_aria',
+      },
+      date: {
+        type: 'string',
+        source: 'meta',
+        meta: 'post_ext_news_meta_date',
       },
     },
     edit: newsLinkEdit,
