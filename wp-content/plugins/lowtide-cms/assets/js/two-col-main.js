@@ -1,30 +1,31 @@
 
 /* Two Col Main block -------------------------------------- */
-var twoColMainArgs = {
-  title: '(SSLS) Two Column: Main column',
-  category: 'lowtide-blocks',
-  icon: 'text',
+(function(wp) {
+  const el = wp.element.createElement;
+  const registerBlock = wp.blocks.registerBlockType;
+  const InnerBlocks = wp.blockEditor.InnerBlocks;
+  const twoColMainArgs = {
+    title: '(SSLS) Two Column: Main column',
+    category: 'lowtide-blocks',
+    icon: 'text',
 
-  edit: function (props) {
-    return el(
-      'div', {
-        className: props.className + ' gcp-two-col gcp-two-col-main'
-      },
-      el(InnerBlocks, {
+    edit: function(props) {
+      return el(
+          'div', {
+            className: props.className + ' gcp-two-col gcp-two-col-main',
+          },
+          el(InnerBlocks, {
+            renderAppender: () => el(InnerBlocks.ButtonBlockAppender),
+          })
+      );
+    },
 
+    save: function(props) {
+      return el(InnerBlocks.Content);
+    },
+    /* end of save() */
+  }; /* end of containerArgs obj*/
 
-        renderAppender: () => el(InnerBlocks.ButtonBlockAppender)
-      })
-    );
-  },
+  registerBlock('lowtide/two-col-main', twoColMainArgs);
+})(window.wp);
 
-  save: function (props) {
-
-    return el(InnerBlocks.Content);
-
-  },
-  /* end of save() */
-
-}; /*end of containerArgs obj*/
-
-wp.blocks.registerBlockType('lowtide/two-col-main', twoColMainArgs);

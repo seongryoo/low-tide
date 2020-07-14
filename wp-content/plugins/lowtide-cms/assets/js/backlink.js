@@ -1,56 +1,60 @@
 /* Back link ---------------------------------------------- */
-var backArgs = {
-  title: '(SSLS) Breadcrumbs back link',
-  category: 'lowtide-blocks',
-  icon: 'undo',
+(function(wp) {
+  const el = wp.element.createElement;
+  const registerBlock = wp.blocks.registerBlockType;
+  const backArgs = {
+    title: '(SSLS) Breadcrumbs back link',
+    category: 'lowtide-blocks',
+    icon: 'undo',
 
-  edit: function (props) {
-    let domAttrs = {
-      className: props.className + ' gcp-back',
-    }
+    edit: function(props) {
+      const domAttrs = {
+        className: props.className + ' gcp-back',
+      };
 
-    let linkTextAttrs = {
-      label: 'Link display text',
-      value: props.attributes.linkText,
-      onChange: function (value) {
-        props.setAttributes({
-          linkText: value,
-        });
-      },
-    }
+      const linkTextAttrs = {
+        label: 'Link display text',
+        value: props.attributes.linkText,
+        onChange: function(value) {
+          props.setAttributes({
+            linkText: value,
+          });
+        },
+      };
 
-    let linkUrlAttrs = {
-      label: 'Link URL',
-      value: props.attributes.linkUrl,
-      onChange: function (value) {
-        props.setAttributes({
-          linkUrl: value,
-        });
-      },
-    }
+      const linkUrlAttrs = {
+        label: 'Link URL',
+        value: props.attributes.linkUrl,
+        onChange: function(value) {
+          props.setAttributes({
+            linkUrl: value,
+          });
+        },
+      };
 
-    let linkAriaAttrs = {
-      label: 'Link ARIA label (Optional)',
-      value: props.attributes.linkAria,
-      onChange: function (value) {
-        props.setAttributes({
-          linkAria: value,
-        });
-      },
-    }
+      const linkAriaAttrs = {
+        label: 'Link ARIA label (Optional)',
+        value: props.attributes.linkAria,
+        onChange: function(value) {
+          props.setAttributes({
+            linkAria: value,
+          });
+        },
+      };
 
-    let linkText = el(wp.components.TextControl, linkTextAttrs);
-    let linkUrl = el(wp.components.TextControl, linkUrlAttrs);
-    let linkAria = el(wp.components.TextControl, linkAriaAttrs);
+      const linkText = el(wp.components.TextControl, linkTextAttrs);
+      const linkUrl = el(wp.components.TextControl, linkUrlAttrs);
+      const linkAria = el(wp.components.TextControl, linkAriaAttrs);
 
-    return el(
-      'div',
-      domAttrs, [linkText, linkUrl, linkAria]
-    );
-  },
+      return el(
+          'div',
+          domAttrs, [linkText, linkUrl, linkAria]
+      );
+    },
 
-  save: function (props) {
-    return null;
-  }
-}
-wp.blocks.registerBlockType('lowtide/back-link-block', backArgs);
+    save: function(props) {
+      return null;
+    },
+  };
+  registerBlock('lowtide/back-link-block', backArgs);
+})(window.wp);

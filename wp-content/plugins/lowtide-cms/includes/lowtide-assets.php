@@ -4,17 +4,11 @@
 /* Loading GCP block assets (js file and administrative css) ----------------------- */
 
 function lowtide_load_blocks() {
-
-  wp_enqueue_script(
-    'lowtide-event-helpers',
-    plugin_dir_url( __FILE__ ) . '../assets/js/event-helpers.js'
-  );
   
   $scripts = array(
     'backlink',
     'card',
     'contained-width',
-    'event',
     'event-data',
     'file-upload',
     'group',
@@ -30,7 +24,6 @@ function lowtide_load_blocks() {
     'wp-i18n',
     'wp-editor',
     'wp-date',
-    'lowtide-event-helpers',
   );
   
   foreach ( $scripts as $tag ) {

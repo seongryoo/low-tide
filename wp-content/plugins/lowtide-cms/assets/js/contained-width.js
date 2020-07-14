@@ -1,29 +1,30 @@
 /* Width container block -------------------------------------- */
-var containerArgs = {
-  title: '(SSLS) Width Container',
-  category: 'lowtide-blocks',
-  icon: 'editor-contract',
+(function(wp) {
+  const el = wp.element.createElement;
+  const registerBlock = wp.blocks.registerBlockType;
+  const InnerBlocks = wp.blockEditor.InnerBlocks;
+  const containerArgs = {
+    title: '(SSLS) Width Container',
+    category: 'lowtide-blocks',
+    icon: 'editor-contract',
 
-  edit: function (props) {
-    return el(
-      'div', {
-        className: props.className
-      },
-      el(InnerBlocks, {
+    edit: function(props) {
+      return el(
+          'div', {
+            className: props.className,
+          },
+          el(InnerBlocks, {
+            renderAppender: () => el(InnerBlocks.ButtonBlockAppender),
+          })
+      );
+    },
 
+    save: function(props) {
+      return el(InnerBlocks.Content);
+    },
+    /* end of save() */
 
-        renderAppender: () => el(InnerBlocks.ButtonBlockAppender)
-      })
-    );
-  },
+  }; /* end of containerArgs obj*/
 
-  save: function (props) {
-
-    return el(InnerBlocks.Content);
-
-  },
-  /* end of save() */
-
-}; /*end of containerArgs obj*/
-
-wp.blocks.registerBlockType('lowtide/width-container', containerArgs);
+  registerBlock('lowtide/width-container', containerArgs);
+})(window.wp);

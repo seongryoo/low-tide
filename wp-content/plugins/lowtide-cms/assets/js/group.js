@@ -1,29 +1,31 @@
 /* Section block -------------------------------------- */
-var groupArgs = {
-  title: '(SSLS) Section Block',
-  category: 'lowtide-blocks',
-  icon: 'editor-insertmore',
+(function(wp) {
+  const el = wp.element.createElement;
+  const InnerBlocks = wp.blockEditor.InnerBlocks;
+  const registerBlock = wp.blocks.registerBlockType;
+  const groupArgs = {
+    title: '(SSLS) Section Block',
+    category: 'lowtide-blocks',
+    icon: 'editor-insertmore',
 
-  edit: function (props) {
-    return el(
-      'div', {
-        className: props.className + ' gcp-group'
-      },
-      el(InnerBlocks, {
+    edit: function(props) {
+      return el(
+          'div', {
+            className: props.className + ' gcp-group',
+          },
+          el(InnerBlocks, {
+            renderAppender: () => el(InnerBlocks.ButtonBlockAppender)
+          })
+      );
+    },
 
+    save: function(props) {
+      return el(InnerBlocks.Content);
+    },
+    /* end of save() */
 
-        renderAppender: () => el(InnerBlocks.ButtonBlockAppender)
-      })
-    );
-  },
+  }; /* end of containerArgs obj*/
 
-  save: function (props) {
+  registerBlock('lowtide/basic-group', groupArgs);
+})(window.wp);
 
-    return el(InnerBlocks.Content);
-
-  },
-  /* end of save() */
-
-}; /*end of containerArgs obj*/
-
-wp.blocks.registerBlockType('lowtide/basic-group', groupArgs);
