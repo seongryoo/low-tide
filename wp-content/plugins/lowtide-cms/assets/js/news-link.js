@@ -40,7 +40,7 @@
             [calendarLabel, calendarElement]
         )
     );
-    const placeHolderUrl = scriptData.pluginUrl + '/assets/image.png';
+    const placeHolderUrl = scriptData.pluginUrl + 'assets/img/image.png';
     // Upload icon
     const dashiUpload = el(
         'span',
