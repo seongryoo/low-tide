@@ -10,7 +10,8 @@
     edit: function(props) {
       return el(
           'div', {
-            className: props.className + ' gcp-two-col gcp-two-col-related-docs',
+            className: props.className
+              + ' gcp-two-col gcp-two-col-related-docs',
           },
           el(InnerBlocks, {
             renderAppender: () => el(InnerBlocks.ButtonBlockAppender),
