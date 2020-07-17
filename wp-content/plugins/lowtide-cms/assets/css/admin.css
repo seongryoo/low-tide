@@ -44,6 +44,7 @@
 
 /* Styling for text input blocks */
 .block-editor-block-list__layout 
+ .lowtide
  .components-base-control 
  .components-base-control__field {
   margin-bottom: 1.25em;
@@ -56,6 +57,7 @@
 }
 
 .block-editor-block-list__layout 
+ .lowtide
  .components-base-control 
  .components-base-control__field 
  .block-editor-rich-text__editable {
@@ -71,6 +73,7 @@
 }
 
 .block-editor-block-list__layout 
+ .lowtide
  .components-base-control 
  .components-base-control__field 
  .block-editor-rich-text__editable:focus {
@@ -80,6 +83,7 @@
   box-shadow: none;
 }
 .block-editor-block-list__layout 
+ .lowtide
  .components-base-control 
  .components-base-control__field 
       input[type="text"]::placeholder {
@@ -87,6 +91,7 @@
 }
 
 .block-editor-block-list__layout 
+ .lowtide
  .components-base-control 
  .components-base-control__field 
  .block-editor-rich-text__editable 
@@ -95,6 +100,7 @@
 }
 
 .block-editor-block-list__layout 
+ .lowtide
  .components-base-control 
  .components-base-control__field 
  input[type="text"] {
@@ -109,6 +115,7 @@
 }
 
 .block-editor-block-list__layout 
+ .lowtide
  .components-base-control 
  .components-base-control__field 
  input[type="text"]:focus {
@@ -119,6 +126,7 @@
 }
 
 .block-editor-block-list__layout 
+ .lowtide
  .components-base-control 
  .components-base-control__field 
       label {
@@ -127,6 +135,7 @@
 }
 
 .block-editor-block-list__layout 
+ .lowtide
  button.components-button.upload-button {
   color: rgb(0, 124, 186);
   font-size: 0.75em;
@@ -136,25 +145,34 @@
 }
 
 .block-editor-block-list__layout 
+ .lowtide
  button.components-button.upload-button 
  span {
   margin-right: 0.2em;
 }
 
-.block-editor-block-list__layout button.components-button.upload-button:focus,
-.block-editor-block-list__layout button.components-button.upload-button:hover {
+.block-editor-block-list__layout 
+ .lowtide
+ button.components-button.upload-button:focus,
+.block-editor-block-list__layout 
+ .lowtide
+ button.components-button.upload-button:hover {
   background: #1989c1 !important;
   border: 2px solid #1989c1 !important;
   color: white !important;
   box-shadow: none !important;
 }
 
-.block-editor-block-list__layout img.uploaded-image-display {
+.block-editor-block-list__layout 
+ .lowtide
+ img.uploaded-image-display {
   max-width: 250px;
   display: block;
   margin: 1em 0;
 }
 
-.block-editor-block-list__layout .components-datetime__date {
+.block-editor-block-list__layout 
+ .lowtide
+ .components-datetime__date {
   border: none;
 }

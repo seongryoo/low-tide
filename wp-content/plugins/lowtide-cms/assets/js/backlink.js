@@ -9,7 +9,7 @@
 
     edit: function(props) {
       const domAttrs = {
-        className: props.className + ' gcp-back',
+        className: props.className + ' gcp-back lowtide',
       };
 
       const linkTextAttrs = {

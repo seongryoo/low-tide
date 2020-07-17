@@ -51,7 +51,7 @@
       return el(
           'div',
           {
-            className: 'choose-link ' + props.attributes.className,
+            className: 'lowtide ' + props.attributes.className,
           },
           [url, displayText, ariaText]
       );

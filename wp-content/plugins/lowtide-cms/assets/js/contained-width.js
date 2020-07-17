@@ -11,7 +11,7 @@
     edit: function(props) {
       return el(
           'div', {
-            className: props.className,
+            className: props.className + ' lowtide',
           },
           el(InnerBlocks, {
             renderAppender: () => el(InnerBlocks.ButtonBlockAppender),

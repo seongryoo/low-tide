@@ -216,7 +216,7 @@
     return el(
         'div',
         {
-          className: 'news-link-data',
+          className: 'lowtide',
         },
         [title, calendarWrapped, link,
           aria, uploadImageWrapped, uploadLogoWrapped]

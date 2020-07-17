@@ -11,7 +11,7 @@
       return el(
           'div', {
             className: props.className
-              + ' gcp-two-col gcp-two-col-related-docs',
+              + ' gcp-two-col gcp-two-col-related-docs lowtide',
           },
           el(InnerBlocks, {
             renderAppender: () => el(InnerBlocks.ButtonBlockAppender),

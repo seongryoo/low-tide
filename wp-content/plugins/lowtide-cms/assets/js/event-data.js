@@ -116,7 +116,9 @@
     // Final element
     return el(
         'div',
-        [],
+        {
+          className: 'lowtide',
+        },
         [name, calendarWrapped, time, loc, descWrapped]
     );
   };

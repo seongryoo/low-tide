@@ -11,10 +11,10 @@
     edit: function(props) {
       return el(
           'div', {
-            className: props.className + ' gcp-group',
+            className: props.className + ' lowtide',
           },
           el(InnerBlocks, {
-            renderAppender: () => el(InnerBlocks.ButtonBlockAppender)
+            renderAppender: () => el(InnerBlocks.ButtonBlockAppender),
           })
       );
     },

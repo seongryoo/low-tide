@@ -12,7 +12,7 @@
     edit: function(props) {
       return el(
           'div', {
-            className: props.className + ' gcp-two-col gcp-two-col-main',
+            className: props.className + ' gcp-two-col gcp-two-col-main lowtide',
           },
           el(InnerBlocks, {
             renderAppender: () => el(InnerBlocks.ButtonBlockAppender),

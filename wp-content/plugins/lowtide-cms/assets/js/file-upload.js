@@ -77,7 +77,7 @@
       return el(
           'div',
           {
-            className: 'choose-file ' + props.attributes.className,
+            className: 'lowtide ' + props.attributes.className,
           },
           [chosenFile, renderButton, displayText, ariaText]
       );

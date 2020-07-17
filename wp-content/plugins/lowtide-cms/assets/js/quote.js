@@ -9,7 +9,7 @@
 
     edit: function(props) {
       const domAttrs = {
-        className: props.className + ' gcp-quote',
+        className: props.className + ' lowtide',
         type: 'text',
         onChange: function(value) {
           props.setAttributes({
