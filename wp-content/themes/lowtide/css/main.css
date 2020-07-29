@@ -1020,6 +1020,12 @@ h2.blog-post-title {
   text-align: left;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 992px) {
+  h2.post-title {
+    font-size: 36px;
+  }
+}
+
 
 body.single .bio-block {
   margin-bottom: 3em;

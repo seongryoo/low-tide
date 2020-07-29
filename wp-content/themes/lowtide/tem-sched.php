@@ -18,6 +18,7 @@ Template Post Type: post_sched
   <div class="section">
     <div class="container">
       <div class="row justify-content-md-center">
+        <div class="col-md-12">
           <?php
 
             if ( have_posts() ) {
@@ -31,7 +32,7 @@ Template Post Type: post_sched
                 
               $markup = '';
 
-              $markup .= '<h2 class="blog-post-title" aria-hidden="true">' . $title . '</h2>';
+              $markup .= '<h2 class="post-title" aria-hidden="true">' . $title . '</h2>';
 
               echo $markup;
 
@@ -44,6 +45,7 @@ Template Post Type: post_sched
             }
 
           ?>
+        </div> <!--/.col-md-12-->
       </div><!--/.row-->
     </div><!--/.container-->
   </div><!--/.section-->
