@@ -1,0 +1,45 @@
+.session-post {
+    color: #333E4A;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.1px;
+    line-height: 1.75;
+}
+.session-section {
+    margin-bottom: 2em;
+}
+.speakers-container {
+
+}
+.session-section-title {
+    color: #202932;
+    font-family: 'Arimo', sans-serif;
+    font-size: 32px;
+    margin: 0 0 0px 0;
+}
+.session-speakers {
+
+}
+.session-speaker {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+.session-link a {
+  color: #175088;
+  background-color: transparent;
+  border-bottom: 3px solid #c1d3ff;
+  text-decoration: none;
+  -webkit-transition: background 0.1s, color 0.1s, border-bottom 0.1s;
+  transition: background 0.1s, color 0.1s, border-bottom 0.1s;
+}
+
+.session-link a:hover,
+.session-link a:focus {
+  background: #5095d954;
+  color: black;
+  border-bottom: 5px solid #175088;
+  outline: none;
+}
+.session-desc {
+
+}

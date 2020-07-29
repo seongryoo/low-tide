@@ -1,0 +1,123 @@
+/* Schedule */
+.schedule-container {
+    color: #333E4A;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.1px;
+    line-height: 1.75;
+}
+
+/* Tracks */
+.tracks-container {
+    margin-top: 48px;
+    font-size: 18px;
+    border-top: 3px solid #bbb;
+    padding: 1em 0;
+}
+.track-offset, .track {
+    margin-right: 1.5em;
+    padding-left: 1em;
+}
+
+/* Slots */
+.slots-container {
+
+}
+.slot {
+    border-top: 3px solid #bbb;
+}
+.slot-name, .slot-dropzone {
+    margin-top: 1em;
+    margin-right: 1.5em;
+}
+.slot-dropzone.slot-shared {
+    margin-left: -1em;
+}
+.slot-name {
+    color: #202932;
+    font-family: 'Arimo', sans-serif;
+    padding-right: 1em;
+}
+.slot-dropzone {
+
+}
+
+/* Sessions */
+.session {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: none;
+    -webkit-box-shadow: 0 16px 48px rgba(32, 41, 50, 0.12);
+    box-shadow: 0 16px 48px rgba(32, 41, 50, 0.12);
+}
+.session-name a {
+    color: #202932;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    display: block;
+}
+.track-number-container {
+    margin: 1em 0;
+}
+.track-number {
+    font-size: 16px;
+    border-radius: 2em;
+    padding: 0.25em 0.75em;
+    background: #eaeaea;
+    display: inline;
+}
+.track-number.track-1 {
+    background: #ffe3b8;
+}
+.track-number.track-2 {
+    background: #dcd0ff;
+}
+.track-number.track-3 {
+    background: #ffd0d0;
+}
+.watch-session {
+    display: block;
+}
+.watch-session a {
+    font-size: 18px;
+    color: #175088;
+    background-color: transparent;
+    border-bottom: 3px solid #c1d3ff;
+    text-decoration: none;
+    -webkit-transition: background 0.1s, color 0.1s, border-bottom 0.1s;
+    transition: background 0.1s, color 0.1s, border-bottom 0.1s;
+}
+
+.watch-session a:focus,
+.watch-session a:hover {
+    background: #5095d954;
+    color: black;
+    border-bottom: 5px solid #175088;
+    outline: none;
+}
+/* Resizing */
+@media screen and (max-width: 992px) {
+    .slot {
+        flex-direction: column;
+    }
+    .slot-dropzone {
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .slot-name {
+        margin: 1em 0;
+        text-align: center;
+        padding-right: 0;
+    }
+    .tracks-container {
+        border: none;
+    }
+    .track {
+        display: none;
+    }
+    .slot-dropzone.slot-shared {
+        margin-left: 0;
+    }
+}

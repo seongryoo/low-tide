@@ -1,3 +1,12 @@
+<?php
+
+/*
+Template Name: Schedule template
+Template Post Type: post_sched
+*/
+
+?>
+
 <?php get_header(); ?>
 
 <main id="content" class="<?php 
@@ -9,7 +18,6 @@
   <div class="section">
     <div class="container">
       <div class="row justify-content-md-center">
-        <div class="col-md-9">
           <?php
 
             if ( have_posts() ) {
@@ -23,7 +31,7 @@
                 
               $markup = '';
 
-              $markup .= '<h2 class="post-title" aria-hidden="true">' . $title . '</h2>';
+              $markup .= '<h2 class="blog-post-title" aria-hidden="true">' . $title . '</h2>';
 
               echo $markup;
 
@@ -36,7 +44,6 @@
             }
 
           ?>
-        </div><!--/.col-md-9-->
       </div><!--/.row-->
     </div><!--/.container-->
   </div><!--/.section-->
