@@ -23,7 +23,7 @@ function render_events_in_upcoming_order( $upcoming ) {
       $query->the_post();
       $id = get_the_ID();
 
-      $name = get_post_meta( $id, 'post_event_meta_name', true);
+      $name = get_the_title( $id );
       $date = get_post_meta( $id, 'post_event_meta_date', true);
       $time = get_post_meta( $id, 'post_event_meta_time', true);
       $loc  = get_post_meta( $id, 'post_event_meta_loc',  true);

@@ -1,6 +1,7 @@
 <?php
 
-require get_template_directory() . '/engines/engines-events.php';
+require get_template_directory() . '/render-functions/events.php';
+require get_template_directory() . '/render-functions/news.php';
 
 /* A useful helper method */
 function scream( $msg ) {
