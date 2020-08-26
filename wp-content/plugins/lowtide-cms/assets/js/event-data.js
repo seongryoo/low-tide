@@ -64,19 +64,6 @@
         wp.components.TextControl,
         locArgs
     );
-    // Name field
-    const nameArgs = {
-      onChange: function(value) {
-        props.setAttributes({name: value});
-      },
-      label: 'Event name:',
-      value: props.attributes.name,
-      placeholder: 'Start typing...',
-    };
-    const name = el(
-        wp.components.TextControl,
-        nameArgs
-    );
     // Description field
     const descArgs = {
       onChange: function(value) {
@@ -128,11 +115,6 @@
     category: 'lowtide-blocks',
     icon: 'calendar-alt',
     attributes: {
-      name: {
-        type: 'string',
-        source: 'meta',
-        meta: 'post_event_meta_name',
-      },
       date: {
         type: 'string',
         source: 'meta',

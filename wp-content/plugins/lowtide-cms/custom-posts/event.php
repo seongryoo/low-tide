@@ -48,7 +48,6 @@ function lowtide_register_events_meta() {
     'type'                    => 'string',
   );
 
-  register_post_meta( 'post_event', 'post_event_meta_name', $args );
   register_post_meta( 'post_event', 'post_event_meta_date', $args );
   register_post_meta( 'post_event', 'post_event_meta_time', $args );
   register_post_meta( 'post_event', 'post_event_meta_loc', $args );
@@ -102,4 +101,14 @@ function lowtide_fill_events_columns( $column, $post_id ) {
       echo $status;
       break;
   }
+}
+
+
+// Change title placeholder for events
+add_filter( 'enter_title_here', 'lowtide_event_custom_enter_title' );
+function lowtide_event_custom_enter_title( $input ) {
+  if ( 'post_event' === get_post_type() ) {
+    return 'Event name';
+  }
+  return $input;
 }

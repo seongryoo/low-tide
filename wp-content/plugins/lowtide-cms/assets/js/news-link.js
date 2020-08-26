@@ -173,19 +173,6 @@
         },
         uploadLogoBlock
     );
-    // Title
-    const titleArgs = {
-      onChange: function(value) {
-        props.setAttributes({title: value});
-      },
-      label: 'Article headline:',
-      value: props.attributes.title,
-      placeholder: 'Start typing...',
-    };
-    const title = el(
-        wp.components.TextControl,
-        titleArgs
-    );
     // Link
     const linkArgs = {
       onChange: function(value) {
@@ -199,27 +186,13 @@
         wp.components.TextControl,
         linkArgs
     );
-    // Aria label
-    const ariaArgs = {
-      onChange: function(value) {
-        props.setAttributes({aria: value});
-      },
-      label: 'Accessible description that can be understood alone: ' +
-        '(e.g. Read January 10th article "How Sea Level Rise...)',
-      value: props.attributes.aria,
-      placeholder: 'Start typing...',
-    };
-    const aria = el(
-        wp.components.TextControl,
-        ariaArgs
-    );
     return el(
         'div',
         {
           className: 'lowtide',
         },
-        [title, calendarWrapped, link,
-          aria, uploadImageWrapped, uploadLogoWrapped]
+        [calendarWrapped, link,
+          uploadImageWrapped, uploadLogoWrapped]
     );
   };
   const extNewsDataArgs = {
@@ -227,11 +200,6 @@
     category: 'lowtide-blocks',
     icon: 'id-alt',
     attributes: {
-      title: {
-        type: 'string',
-        source: 'meta',
-        meta: 'post_ext_news_meta_title',
-      },
       img: {
         type: 'number',
         source: 'meta',
@@ -256,11 +224,6 @@
         type: 'string',
         source: 'meta',
         meta: 'post_ext_news_meta_link',
-      },
-      aria: {
-        type: 'string',
-        source: 'meta',
-        meta: 'post_ext_news_meta_aria',
       },
       date: {
         type: 'string',

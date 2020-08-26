@@ -53,14 +53,12 @@ function lowtide_register_ext_news_meta() {
     'type'                    => 'number',
   );
 
-  register_post_meta( 'post_ext_news', 'post_ext_news_meta_title', $args );
   register_post_meta( 'post_ext_news', 'post_ext_news_meta_img', $fileArgs );
   register_post_meta( 'post_ext_news', 'post_ext_news_meta_img_url', $args );
   register_post_meta( 'post_ext_news', 'post_ext_news_meta_logo', $fileArgs );
   register_post_meta( 'post_ext_news', 'post_ext_news_meta_logo_url', $args );
   register_post_meta( 'post_ext_news', 'post_ext_news_meta_link', $args );
   register_post_meta( 'post_ext_news', 'post_ext_news_meta_date', $args );
-  register_post_meta( 'post_ext_news', 'post_ext_news_meta_aria', $args );
 }
 
 add_action( 'init', 'lowtide_register_ext_news_meta' );
@@ -75,3 +73,12 @@ function lowtide_register_ext_news_data_block_template() {
 }
 
 add_action( 'init', 'lowtide_register_ext_news_data_block_template' );
+
+// Change title placeholder for external news
+add_filter( 'enter_title_here', 'lowtide_ext_news_custom_enter_title' );
+function lowtide_ext_news_custom_enter_title( $input ) {
+  if ( 'post_ext_news' === get_post_type() ) {
+    return 'Article title';
+  }
+  return $input;
+}
