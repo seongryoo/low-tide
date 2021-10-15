@@ -1,9 +1,12 @@
 <?php get_header(); ?>
 
+
 <main id="content" class="<?php 
-  global $post;
-  $post_slug = $post->post_name;
-  echo $post_slug;
+  if ( is_single() || is_page() ) {
+    global $post;
+    $post_slug = $post->post_name;
+    echo $post_slug;
+  }
 ?>">
   
   <div class="section">
@@ -30,19 +33,27 @@
                 $author = get_the_author();
                 $authorURL = esc_url( get_the_author_meta( 'url' ) );
 
+                $guest_author = get_post_meta( get_the_ID(), 'dev_guest_author_name', true);
+                $guest_author_img = get_post_meta( get_the_ID(), 'dev_guest_author_img', true);
+
+                if ( $guest_author != '' ) {
+                  $author = $guest_author;
+                  $src = $guest_author_img;
+                }
+
               /* Post title */
                 
               $markup = '';
 
-              $markup .= '<h2 class="blog-post-title" aria-hidden="true">' . $title . '</h2>';
+              $markup .= '<h1 class="blog-post-title" aria-hidden="true">' . $title . '</h1>';
           
               /* Post author */
                 $markup .= '<div class="bio-block">';
 
-                  $markup .= '<img class="blog-post-author-image" src="' . $src . '" alt="' . get_the_author() . '">';
+                  $markup .= '<img class="blog-post-author-image" width="32" height="32" src="' . $src . '" alt="' . $author . '">';
 
                   $markup .= '<div class="bio-block-info">';
-                    $markup .= '<a class="author-link" href="' . $authorURL . '" aria-label="Visit ' . $author . '\'s profile"><p class="blog-post-author">' . get_the_author() . '</p></a>';
+                    $markup .= '<p class="blog-post-author">' . $author . '</p>';
                     $markup .= '<p class="blog-post-date">' . get_the_date( 'M j, Y' ) . '</p>';
                   $markup .= '</div>';
 

@@ -412,29 +412,31 @@ main figcaption a:focus {
   padding: 48px 0;
 }
 
-.section h2 {
+.section h1,
+.home .section h2 {
   color: #202932;
   font-family: 'Arimo', sans-serif;
   font-size: 40px;
   text-align: center;
   margin-bottom: 48px;
+  width: 100%;
 }
 
-.section h3 {
+.section h2 {
   color: #202932;
   font-family: 'Arimo', sans-serif;
   font-size: 32px;
   margin: 0 0 16px 0;
 }
 
-.section h4 {
+.section h3 {
   color: #202932;
   font-family: 'Arimo', sans-serif;
   font-size: 20px;
   margin: 0;
 }
 
-.section h5 {
+.section h4 {
   color: #202932;
   font-family: 'Arimo', sans-serif;
   font-size: 18px;
@@ -1029,6 +1031,11 @@ h2.blog-post-title {
 
 body.single .bio-block {
   margin-bottom: 3em;
+}
+
+.wp-block-image img {
+  width: 100%;
+  height: auto;
 }
 
 .wp-block-image {

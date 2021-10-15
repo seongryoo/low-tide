@@ -23,7 +23,7 @@
                 
               $markup = '';
 
-              $markup .= '<h2 class="post-title" aria-hidden="true">' . $title . '</h2>';
+              $markup .= '<h1 class="post-title" aria-hidden="true">' . $title . '</h1>';
 
               echo $markup;
 

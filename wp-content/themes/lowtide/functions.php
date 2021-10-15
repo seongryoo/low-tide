@@ -67,8 +67,9 @@ function lowtide_register_styles() {
   $style_dir = get_template_directory_uri() . '/css';
   
   wp_enqueue_style( 'lowtide-style', $style_dir . '/main.css' );  
-  wp_enqueue_style( 'lowtide-schedule-style', $style_dir . '/schedule.css' );
+  // wp_enqueue_style( 'lowtide-schedule-style', $style_dir . '/schedule.css' );
   wp_enqueue_style( 'lowtide-session-style', $style_dir . '/session.css' );
+  wp_enqueue_style( 'lowtide-table-style', $style_dir . '/tables.css' );
   
 }
 

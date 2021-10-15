@@ -4,7 +4,7 @@
   <div class="our-interns section">
     <div class="container">
 
-      <h2>Interns</h2>
+      <h1>Interns</h1>
         <div class="row justify-content-md-center">
           <div class="col-md-9">
             <p>We are happy to introduce our class of 2020 interns who were selected through a rigorous application process.  This internship opportunity is in collaboration with the <a href="https://globalchange.gatech.edu/" aria-label="Global Change Program at Georgia Tech">Global Change Program (GCP)</a> and the <a href="https://career.gatech.edu/" aria-label="Center for Career Discovery and Development at Georgia Tech">Center for Career Discovery &amp; Development (C2D2)</a>. This internship has also been in partnership with the <a href="http://ipat.gatech.edu/" aria-label="Institute for People and Technology at Georgia Tech">Institute for People and Technology (IPaT)</a>.

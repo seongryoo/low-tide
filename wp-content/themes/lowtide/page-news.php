@@ -4,7 +4,7 @@
 
 <div id="news" class="news section">
   <div class="container">
-    <h2>In the news</h2>
+    <h1>In the news</h1>
     <div class="row">
       <?php render_news_cards(); ?>
     </div>

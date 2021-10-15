@@ -1,16 +1,18 @@
 <?php get_header(); ?>
 
 <main id="content" class="<?php 
-  global $post;
-  $post_slug = $post->post_name;
-  echo $post_slug;
+  if ( is_single() || is_page() ) {
+    global $post;
+    $post_slug = $post->post_name;
+    echo $post_slug;
+  }
 ?>">
   
   <div class="section">
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-md-12">
-          <h2>Events</h2>
+          <h1>Events</h1>
 
           <div class="events upcoming">
             <h3>Upcoming events</h3>

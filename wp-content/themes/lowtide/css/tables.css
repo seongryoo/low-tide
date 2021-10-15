@@ -1,0 +1,80 @@
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1em 0;
+}
+
+th, td {
+	padding: 1.5rem 2rem 1.5rem 0;
+	text-align: left;
+	vertical-align: top;
+}
+
+tr {
+	border-top: 1px solid #cfcfcf;
+}
+
+thead th:nth-child(1) {
+	width: 15%;
+}
+
+tr th {
+	font-weight: normal;
+}
+
+th, td, .section td p {
+	color: #333E4A;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 18px;
+	letter-spacing: 0.2px;
+	line-height: 1.75;
+}
+
+table .data-pack-name {
+	font-weight: bold;
+}
+
+table .sensor-num {
+	font-weight: normal;
+}
+
+table .footnoted {
+	white-space: nowrap;
+}
+
+.footnotes {
+	width: 100%;
+	opacity: 0.8;
+	font-style: italic;
+}
+
+@media screen and (max-width: 62em) {
+	tr th[scope="rowgroup"] {
+		text-align: center;
+		padding-bottom: 2em;
+	}
+	tr th.data-pack-name {
+		border-top: 1px solid #cfcfcf;
+		padding-top: 2em;
+	}
+	table td, table th {
+		width: 100%;
+		display: inline-block;
+		padding: 0.5em 0;
+	}
+	table tr {
+		border: none;
+		display: block;
+		padding-bottom: 1em;
+	}
+	thead {
+	  position: absolute !important;
+	  height: 1px; 
+	  width: 1px;
+	  overflow: hidden;
+	  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	  clip: rect(1px, 1px, 1px, 1px);
+	  white-space: nowrap; /* added line */
+	}
+}

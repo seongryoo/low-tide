@@ -76,7 +76,7 @@
         </div>
         <div class="col-md-6">
           <h3>Developers</h3>
-          <p>Want to access data from the sensors? <a href="https://dev.sealevelsensors.org/" aria-label="Sea level sensors developer API website">Use our API</a>.</p>
+          <p>Want to access data from the sensors? <a href="https://dev.sealevelsensors.org/" aria-label="Use our sea level sensors developer API website">Use our API</a> or view the sensor data live through the <a href="https://sealevelsensors.org/disclaimer/" aria-label="Live sensor data dashboard">dashboard.</a></p>
         </div>
       </div>
       <div class="row">

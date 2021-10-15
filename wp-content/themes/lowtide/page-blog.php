@@ -1,16 +1,18 @@
 <?php get_header(); ?>
 
 <main id="content" class="<?php 
-  global $post;
-  $post_slug = $post->post_name;
-  echo $post_slug;
+  if ( is_single() || is_page() ) {
+    global $post;
+    $post_slug = $post->post_name;
+    echo $post_slug;
+  }
 ?>">
   
   <div class="section">
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-md-9">
-          <h2><?php the_title(); ?></h2>
+          <h1><?php the_title(); ?></h1>
           <?php
 
             $args = array(
