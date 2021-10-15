@@ -864,6 +864,7 @@ figure.bio-image img {
 @media screen and (max-width: 74.99em) {
   figure.bio-image img {
     height: 210px;
+    width: auto;
   }
 }
 
