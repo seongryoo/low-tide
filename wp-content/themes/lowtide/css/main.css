@@ -838,8 +838,8 @@ figure.bio-image {
 }
 
 figure.bio-image img {
-  width: 100%;
   height: 255px;
+  width: auto;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: top;
